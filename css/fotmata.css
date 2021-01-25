@@ -2,3 +2,29 @@
     margin: 0;
     padding: 0;
 }
+#pagina{
+    width:100%;
+    height:100%;
+    background:#cccccc;
+}
+/* Formata a div TOP*/
+#top{
+    width: 100%;
+    background: azure;
+    border: solid 1px;
+}
+/* Formata a Div conteudo */
+#conteudo{
+    width: 100%;
+    height: 80%;
+    background: bisque;
+
+    border: solid 1px;
+}
+/* Formata a Div radape*/
+#rodape{
+    width: 100%;
+    background: rgb(197, 184, 164);
+
+    border: solid 1px;
+}
