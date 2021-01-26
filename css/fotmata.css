@@ -79,6 +79,12 @@
     
     border: solid 1px;
 }
+#detalhes ul li {
+    list-style-type: none;
+}
+#detalhes ul li:nth-child(1){
+    text-align: center;
+}
 /**/
 /**/
 /**/
