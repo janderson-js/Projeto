@@ -85,6 +85,16 @@
 #detalhes ul li:nth-child(1){
     text-align: center;
 }
+#detalhes ul li:nth-child(2),#detalhes ul li:nth-child(3),#detalhes ul li:nth-child(4)
+{
+    margin-left: 12%;
+}
+#detalhes ul li span:nth-last-child(1){
+    color: red;
+}
+#detalhes span:nth-child(3){
+    color: blue;
+}
 /**/
 /**/
 /**/

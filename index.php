@@ -25,9 +25,9 @@
                         <div id="detalhes">
                            <ul>
                                 <li>Titulo</li>
-                                <li> eu </li>
-                                <li> nada </li>
-                                <li> teste</li>
+                                <li>valor: <span> 500$ </span> </li>
+                                <li> ou <span> 12X </span> de <span> 41,66$</span></li>
+                                <li> no boleto: <span>450$</span> </li>
                            </ul>
                         </div>
                     </div>
