@@ -13,11 +13,31 @@
             </div>
         </div>
         <div id="conteudo">
-            Conteudo
+            <div id="div_lateral_esquerda">
+                Esquerda
+            </div>
+            <div id="conteiner">
+               <?php for($i=1; $i < 13; $i++){?>
+                    <div id="conteudo_especifico">
+                        <div id="imagem" align="center">
+                           <a href="#"> <img width="100%" height="100%" src="img/teste.jpg" alt=""> </a>
+                        </div>
+                        <div id="detalhes">
+                           <ul>
+                                <li>Titulo</li>
+                                <li> eu </li>
+                                <li> nada </li>
+                                <li> teste</li>
+                           </ul>
+                        </div>
+                    </div>
+               <?php }?>
+            </div>
+            <div id="div_lateral_direita">
+                Direita
+            </div>
         </div>
-        <div id="rodape">
-            Rodape
-        </div>
+        
     </div>
 </body>
 </html>

@@ -4,26 +4,92 @@
 }
 #pagina{
     width:100%;
-    height:100%;
+    
     background:#cccccc;
 }
 /* Formata a div TOP*/
 #top{
     width: 100%;
+    height: 15%;
     background: azure;
     border: solid 1px;
 }
 /* Formata a Div conteudo */
 #conteudo{
     width: 100%;
-    height: 80%;
+ 
     background: bisque;
 
     border: solid 1px;
 }
+/* Formata lateral Esquerda*/
+#div_lateral_esquerda{
+    height: 100%;
+    width: 14%;
+    float: left;
+    border: solid 1px;
+}
+/* Formata lateral Direita*/
+#div_lateral_direita{
+    height: 100%;
+    width: 14%;
+    float: right;
+    border: solid 1px;
+}
+/* Formata Div Conteiner*/
+#conteiner{
+    float: left;
+    
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    justify-content: center;
+    
+       
+}
+/* Formata conteudo específico*/
+#conteudo_especifico{
+    
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background: chartreuse;
+    margin-top: 10%;
+    border: solid 1px;
+}
+/* Formta  */
+#conteiner #conteudo_especifico:nth-child(1),#conteiner #conteudo_especifico:nth-child(2),#conteiner #conteudo_especifico:nth-child(3),#conteiner #conteudo_especifico:nth-child(4)
+{
+    margin-top: 3%;
+}
+#conteudo_especifico div
+/* Formata Imagens*/
+#imagem{
+    width: 100%;
+    height: 100%;
+    border: solid 1px;
+}
+/* Formata detalhes*/
+#detalhes{
+    width: 100%;
+    
+    border: solid 1px;
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
 /* Formata a Div radape*/
 #rodape{
     width: 100%;
+    height: 15%;
     background: rgb(197, 184, 164);
 
     border: solid 1px;
