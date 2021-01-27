@@ -21,7 +21,7 @@
                     <div id="conteudo_especifico">
                         <div id="central">
                            <div id="imagem1">
-                                <img  width="85%" height="85%" src="img/teste.jpg" alt="">
+                               <a href="#"> <img  width="85%" height="85%" src="img/teste.jpg" alt="Produto"> </a>
                            </div>
                         </div>
                         
