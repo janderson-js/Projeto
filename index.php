@@ -31,7 +31,7 @@
                                 <li>de:  <span>  500$ </span> </li>
                                 <li>Por: <span>  450$ </span> </li>
                                 <li> ou <span> 12x </span> de <span> 41,66$</span></li>
-                                <li> a vista no boleto: <span>400$</span> </li>
+                                <li> à vista no boleto: <span>400$</span> </li>
                            </ul>
                         </div>
                     </div>

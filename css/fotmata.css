@@ -58,7 +58,7 @@
     height: 230px;
     margin: 10px;
     background: rgb(239, 240, 239);
-    margin-top: 8%;
+    margin-top: 10%;
     
 }
 /* Formta  */
@@ -108,14 +108,19 @@
     font-size: 1.1rem;
     color: black;
 }
-#detalhes ul > li:nth-child(4){
+#detalhes ul > li:nth-child(4) span{
     color: rgb(19, 19, 241);
     font-weight: bolder;
 }
-#detalhes ul > li:nth-child(5){
+#detalhes ul > li:nth-child(5) span{
     color: rgb(9, 158, 4);
     font-weight: bolder;
-    margin-bottom: 3%;
+}
+#detalhes ul > li:nth-child(5){
+    margin-bottom: 5%;
+}
+#detalhes ul > li:nth-child(2){
+    margin-top: 5%;
 }
 /**/
 /**/
