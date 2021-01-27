@@ -19,16 +19,19 @@
             <div id="conteiner">
                <?php for($i=1; $i < 13; $i++){?>
                     <div id="conteudo_especifico">
-                        <div id="imagem" align="center">
-                           <a href="#"> <img width="100%" height="100%" src="img/teste.jpg" alt=""> </a>
+                        <div id="central">
+                           <div id="imagem1">
+                                <img  width="85%" height="85%" src="img/teste.jpg" alt="">
+                           </div>
                         </div>
+                        
                         <div id="detalhes">
                            <ul>
                                 <li>Titulo</li>
                                 <li>de: <span> 500$ </span> </li>
                                 <li>Por: <span> 450$ </span> </li>
                                 <li> ou <span> 12x </span> de <span> 41,66$</span></li>
-                                <li> a vista no boleto: <span>450$</span> </li>
+                                <li> a vista no boleto: <span>400$</span> </li>
                            </ul>
                         </div>
                     </div>
