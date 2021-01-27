@@ -25,9 +25,10 @@
                         <div id="detalhes">
                            <ul>
                                 <li>Titulo</li>
-                                <li>valor: <span> 500$ </span> </li>
-                                <li> ou <span> 12X </span> de <span> 41,66$</span></li>
-                                <li> no boleto: <span>450$</span> </li>
+                                <li>de: <span> 500$ </span> </li>
+                                <li>Por: <span> 450$ </span> </li>
+                                <li> ou <span> 12x </span> de <span> 41,66$</span></li>
+                                <li> a vista no boleto: <span>450$</span> </li>
                            </ul>
                         </div>
                     </div>
