@@ -15,10 +15,18 @@
                 </div>
                 <div id="conteudo">
                     <div id="div_lateral_esquerda">
-                        Esquerda
+                        <ul>
+                            <?php
+                            for($a=1; $a <= 5; $a++){
+                            ?>
+                                    <li>Marca-(<?php echo "$a"; ?>)</li>
+                            <?php
+                            }
+                            ?>
+                        </ul>
                     </div>
 
-                    <div id="dacerto">
+                    <div id="funcionalidade">
                         <div id="funcao">
                             <p>asdasd</p>
                         </div>
@@ -50,6 +58,9 @@
                     <div id="div_lateral_direita">
                         Direita
                     </div>
+                </div>
+                <div id="rodape">
+                    sadasd
                 </div>
             </div>
         </div>
