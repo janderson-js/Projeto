@@ -18,6 +18,9 @@
                         Esquerda
                     </div>
                     <div id="conteiner">
+                        <div id="funcao">
+                        <<  1  -   2  -  3  -  4  >>
+                        </div>
                         <?php for($i=1; $i < 13; $i++){?>
                             <div id="conteudo_especifico">
                                 <div id="central">
@@ -36,6 +39,9 @@
                                 </div>
                             </div>
                         <?php }?>
+                        <div id="funcao">
+                            << 1  -   2  -  3  -  4 >>
+                        </div>
                     </div>
                     <div id="div_lateral_direita">
                         Direita
