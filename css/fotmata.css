@@ -4,15 +4,19 @@
 }
 #pagina{
     width:100%;
-    
-    background:#cccccc;
+    height: 1600px;
+    background:#141313;
+}
+#teste{
+    background: coral;
 }
 /* Formata a div TOP*/
 #top{
     width: 100%;
-    height: 20%;
+    height: 100px;
+    max-height: 150px;
     background: azure;
-    border: solid 1px;
+    
 }
 /* Formata a Div conteudo */
 #conteudo{
@@ -20,27 +24,32 @@
  
     background: bisque;
 
-    border: solid 1px;
+    
+    border-radius: 10px 10px 10px 10px;
 }
 /* Formata lateral Esquerda*/
 #div_lateral_esquerda{
-    height: 100%;
-    width: 16rem;
+    height: 30%;
+    width: 15.9rem;
     float: left;
-    border: solid 1px;
+    background: azure;
+    border-radius: 0px 0px 10px 10px;
 }
 /* Formata lateral Direita*/
 #div_lateral_direita{
-    height: 100%;
-    width: 16rem;
-    float: right;
-    border: solid 1px;
+    position: relative;
+    height: 30%;
+    width: 15.9rem;
+    float: left;
+    background: azure;
+    border-radius: 0px 0px 10px 10px;
+    
 }
 /* Formata Div Conteiner*/
 #conteiner{
     float: left;
     
-    width: 60%;
+    width: 61%;
     
 
     display: flex;
@@ -48,19 +57,28 @@
     flex-flow: row wrap;
 
     justify-content: center;
+
+    background: rgb(255, 255, 255);
     
-       
+    border: solid 1px;
+    border-color: transparent;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;      
 }
 /* Formata conteudo específico*/
 #conteudo_especifico{
     
     width: 230px;
-    max-height: 230px;
+    max-height: 320px;
     margin: 10px;
     background: rgb(239, 240, 239);
-    margin-top: 100px;
-    border-radius: 10px 10px 0 0;
-    
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+ 
+}
+#conteudo_especifico:nth-last-child(1),#conteudo_especifico:nth-last-child(2),#conteudo_especifico:nth-last-child(3)
+{
+    margin-bottom: 5%;
 }
 /* Formta  */
 #conteiner #conteudo_especifico:nth-child(1),#conteiner #conteudo_especifico:nth-child(2),#conteiner #conteudo_especifico:nth-child(3)
