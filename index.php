@@ -15,9 +15,7 @@
                 </div>
                 <div id="conteudo">
                     <div id="div_lateral_esquerda">
-                        <hr>
                         <h1>Marcas</h1>
-                        <hr>
                         <ul>
                             <?php
                             for($a=1; $a <= 5; $a++){
@@ -30,9 +28,6 @@
                     </div>
 
                     <div id="funcionalidade">
-                        <div id="funcao">
-                            <p>asdasd</p>
-                        </div>
                         <div id="conteiner">
                             <?php for($i=1; $i < 13; $i++){?>
                                 <div id="conteudo_especifico">
@@ -52,9 +47,6 @@
                                     </div>
                                 </div>
                             <?php }?>
-                        </div>
-                        <div id="funcao">
-                            asdasd
                         </div>
                     </div>
                 </div>
