@@ -29,7 +29,7 @@
 
                     <div id="funcionalidade">
                         <div id="conteiner">
-                            <?php for($i=1; $i < 13; $i++){?>
+                            <?php for($i=1; $i <= 20; $i++){?>
                                 <div id="conteudo_especifico">
                                     <div id="central">
                                         <div id="imagem1">
