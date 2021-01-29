@@ -20,20 +20,19 @@
                             <?php
                             for($a=1; $a <= 5; $a++){
                             ?>
-                                    <li><a href="#" ><?php echo "Marca-($a)"; ?></a></li>
+                                    <li><a href="index.php?cod = <?php echo $a;?>"><?php echo "Marca-($a)"; ?></a></li>
                             <?php
                             }
                             ?>
                         </ul>
                     </div>
-
                     <div id="funcionalidade">
                         <div id="conteiner">
-                            <?php for($i=1; $i <= 20; $i++){?>
+                            <?php for($i=1; $i <= 21; $i++){?>
                                 <div id="conteudo_especifico">
                                     <div id="central">
                                         <div id="imagem1">
-                                            <a href="#"> <img  width="85%" height="85%" src="img/teste.jpg" alt="Produto"> </a>
+                                            <a href="index.php?cod = <?php $i ?>"> <img  width="85%" height="85%" src="img/teste.jpg" alt="Produto"> </a>
                                         </div>
                                     </div>
                                     <div id="detalhes">
@@ -49,6 +48,7 @@
                             <?php }?>
                         </div>
                     </div>
+                    <a href="cadastra.php"><button id="btn_cadastrar">Cadastrar</button> </a>
                 </div>
                 <div id="rodape">
                     sadasd
