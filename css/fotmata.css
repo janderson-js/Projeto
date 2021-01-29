@@ -12,12 +12,10 @@ body{
 }
 #funcionalidade{
     
-    width: 61%;
+    width: 75%;
     float: left;
     border: solid 1px;
     border-radius: 0px 0px 35px 35px; 
-    background: rgb(255, 255, 255);
-
     border: solid 1px;
     border-color: transparent;
     border-top: none;    
@@ -29,37 +27,42 @@ body{
     width: 100%;
     height: 100px;
     max-height: 150px;
-    background: azure;
+    background: rgb(255, 252, 79);
     
 }
 /* Formata a Div conteudo */
 #conteudo{
     width: 100%;
  
-    background: bisque;  
     border-radius: 10px 10px 10px 10px;
 }
 /* Formata lateral Esquerda*/
 #div_lateral_esquerda{
     min-height: 500px;
     max-height: 600px;
+    box-sizing: border-box;
     width: 15.9rem;
+    text-align: center;
     float: left;
-    background: azure;
+    background: #d4dad4;
     border-radius: 0px 0px 10px 10px;
+    vertical-align: middle;
+}
+#div_lateral_esquerda a{
+    text-decoration: none;
+    color: rgb(83, 81, 81);
+     
+}
+
+#div_lateral_esquerda ul li{
+    margin-top: 2%;
+    padding: 10px;
+}
+#div_lateral_esquerda ul li:nth-child(1){
+    margin-top:45%;
 }
 /* Formata lateral Direita*/
-#div_lateral_direita{
-    min-height: 500px;
-    max-height: 600px;
-    position: relative;
-    height: 30%;
-    width: 15.9rem;
-    float: left;
-    background: azure;
-    border-radius: 0px 0px 10px 10px;
-    
-}
+
 /* Formata Div Conteiner*/
 #conteiner{
     float: left;
@@ -70,14 +73,16 @@ body{
 }
 /* Formata conteudo específico*/
 #conteudo_especifico{
-    width: 230px;
-    max-height: 320px;
+    width: 240px;
+    max-height: 350px;
     margin: 10px;
-    background: rgb(230, 235, 230);
+    background: white;
     margin-top: 20px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 15px 15px 15px 15px;
 }
-
+#conteudo_especifico:hover{
+    
+}
 /* Formta  */
 #conteiner #conteudo_especifico:nth-child(1),#conteiner #conteudo_especifico:nth-child(2),#conteiner #conteudo_especifico:nth-child(3)
 {
@@ -91,8 +96,7 @@ body{
 #imagem1{
     width: 225px;
     height: 200px;
-    
-    
+    margin-left: 3%;
 }
 #imagem1 img{
     margin-top: 5%;
@@ -172,7 +176,7 @@ body{
     margin-top: 2%;
     width: 100%;
     height: 100px;
-    background:azure;
-    border-top: none;
-    border-radius: 20px 20px 20px 20px;
+    background:#e0e6e0;
+    border-top: solid 1px;
+    border-color:#b5b6b5;
 }
