@@ -14,10 +14,11 @@
                     </div>
                 </div>
                 <div id="conteudo">
-                    <div id="funcionalidade">
+                    <div id="funcionalidade2">
                         <div id="cadastro">
+                        <a href="index.php"><button id="btn_cadastrar">Voltar</button></a>
                             <form action="processa_cadastra.php" method="post">
-                                <table>
+                                <table id="tabela">
                                     <tr>
                                         <td>Marca:</td>
                                         <td><input type="text" name="marca" placeholder="Marca"></td>
@@ -32,14 +33,14 @@
                                     </tr>
                                     <tr>
                                         <td>Descrição:</td>
-                                        <td><input type="text" name="descricao" placeholder="descricao"></td>
+                                        <td><input type="text" name="descricao" placeholder="Descricao"></td>
                                     </tr>
                                     <tr>
                                         <td>Foto:</td>
                                         <td> <input type="file" name="foto"></td>
                                     </tr>
-                                    <tr calapsan="2">
-                                        <td><input type="reset"></td>
+                                    <tr>
+                                        <td colspan="2" align="center"><input type="reset"  value="Limpar campos" /> <input type="submit" value="Cadastrar"></td>
                                     </tr>
                                 </table>
                             </form>
