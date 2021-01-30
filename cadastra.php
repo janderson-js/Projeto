@@ -16,7 +16,7 @@
                 <div id="conteudo">
                     <div id="funcionalidade2">
                         <div id="cadastro">
-                        <a href="index.php"><button id="btn_cadastrar">Voltar</button></a>
+                        <a href="index.php"><button>Voltar</button></a>
                             <form action="processa_cadastra.php" method="post">
                                 <table id="tabela">
                                     <tr>
@@ -33,7 +33,7 @@
                                     </tr>
                                     <tr>
                                         <td>Descrição:</td>
-                                        <td><input type="text" name="descricao" placeholder="Descricao"></td>
+                                        <td><textarea type="text" name="descricao" placeholder="Descricao"></textarea></td>
                                     </tr>
                                     <tr>
                                         <td>Foto:</td>
