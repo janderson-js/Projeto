@@ -15,7 +15,7 @@
                 </div>
                 <div id="conteudo">
                     <div id="div_lateral_esquerda">
-                        <h1>Marcas</h1>
+                        <h1>Modelos</h1>
                         <ul>
                             <?php
                             for($a=1; $a <= 5; $a++){

@@ -51,6 +51,8 @@ body{
 }
 #div_lateral_esquerda h1:nth-child(1){
     padding: 45px;
+    margin: 0;
+    float: left;
 }
 #div_lateral_esquerda ul li{
     margin-top: 1%;
