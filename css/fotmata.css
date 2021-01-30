@@ -65,11 +65,12 @@ body{
 }
 /* Formata lateral Direita*/
 #btn_cadastrar{
-    border-radius: 10px;
+    border-radius: 5px;
     border: solid 1px;
     border-color: rgb(189, 186, 186);
-    height: 25px;
-    width: 70px;
+    background: white;
+    height: 30px;
+    width: 80px;
     float: left;
     position: relative;
     margin-top: 3%;
@@ -80,8 +81,9 @@ body{
     background: rgb(255, 252, 79);
     border-color: black;
     color: rgb(0, 0, 0);
-    height: 25px;
-    width: 80px;
+}
+#btn_cadastrar span{
+    font-weight: bolder;
 }
 /* Formata Div Conteiner*/
 #conteiner{
@@ -149,7 +151,7 @@ body{
 }
 #detalhes ul li:nth-child(2),#detalhes ul li:nth-child(3),#detalhes ul li:nth-child(4),#detalhes ul li:nth-child(5)
 {
-    text-indent: 15% ;
+    text-indent: 10% ;
 }
 #detalhes ul > li:nth-child(2) > span{
     color: red;
@@ -194,6 +196,17 @@ body{
     margin-left: -60%;
     margin-top: -15%;
     background: white;
+}
+#funcionalidade2 h1{
+    text-align: center;
+    text-decoration: underline;
+    padding: 15px;
+}
+#funcionalidade2 form{
+    margin-top: 5%;
+}
+#funcionalidade2 button:nth-child(1) span{
+    font-weight: bolder;
 }
 #funcionalidade2 button:nth-child(1):hover{
     background: rgb(255, 252, 79);
