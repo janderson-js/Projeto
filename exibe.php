@@ -16,6 +16,7 @@
                 <div id="conteudo">
                     <div id="funcionalidade2">
                         <div id="exibe">
+                        <a href="index.php"><button><span>Voltar</span></button></a>
                             <div id="imagem">
                                 <img src="img/teste.jpg" alt="Produto" width="100%" height="70%" align="middle">
                             </div>

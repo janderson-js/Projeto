@@ -313,11 +313,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-#texo_descricao{
+#texto_descricao{
     width: 80%;
     height: 60%;
     float: left;
-    background: rgb(97, 95, 95);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
