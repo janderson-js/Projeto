@@ -63,6 +63,11 @@ body{
 #div_lateral_esquerda ul li:nth-child(1){
     margin-top:4%;
 }
+#div_lateral_esquerda a:hover{
+    color: red;
+    transition: 1s;
+    text-decoration: underline;
+}
 /* Formata lateral Direita*/
 #btn_cadastrar{
     border-radius: 5px;
@@ -186,6 +191,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 #funcionalidade2 button:nth-child(1){
     border-radius: 5px;
@@ -194,7 +200,7 @@ body{
     height: 25px;
     float: left;
     margin-left: -60%;
-    margin-top: -15%;
+    margin-top: -5%;
     background: white;
 }
 #funcionalidade2 h1{
@@ -208,6 +214,18 @@ body{
 #funcionalidade2 button:nth-child(1) span{
     font-weight: bolder;
 }
+#cadastro table{
+    font-weight: bolder;
+    color: rgb(66, 64, 64);
+}
+#btn_cadastra{
+    margin-left: 5%;
+}
+.btn{
+    padding: 5px;
+    font-weight: bold;
+}
+
 #funcionalidade2 button:nth-child(1):hover{
     background: rgb(255, 252, 79);
 }
@@ -226,7 +244,7 @@ body{
 }
 #cadastro textarea{
     resize: none;
-    width: 175px;
+    width: 173px;
     height: 80px;
 }
 #funcao{
@@ -242,7 +260,66 @@ body{
     margin-top: 2%;
     margin-bottom: -2%;
 }
-/**/
+/* Exibe*/
+#exibe{
+    width: 800px;
+    height: 500px;
+    background: white;
+
+    border: solid 1px rgb(211, 210, 210);
+}
+#imagem{
+    width: 400px;
+    height: 500px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: white;
+}
+#imagem img{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#informes{
+    float: left;
+    width: 400px;
+    height: 250px;
+    background: rgb(179, 175, 175);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#texto{
+    width: 80%;
+    height: 60%;
+    float: left;
+    background: white;
+    
+}
+#descricao{
+    float: left;
+    width: 400px;
+    height: 250px;
+    background: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#texo_descricao{
+    width: 80%;
+    height: 60%;
+    float: left;
+    background: rgb(97, 95, 95);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 /**/
 /**/
 /**/

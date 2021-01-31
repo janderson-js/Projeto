@@ -41,7 +41,7 @@
                                         <td> <input type="file" name="foto"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" align="center"><input type="reset"  value="Limpar campos" /> <input type="submit" value="Cadastrar"></td>
+                                        <td colspan="2" align="center"><input type="reset"  value="Limpar campos" class="btn" /> <input type="submit" value="Cadastrar" id="btn_cadastra" class="btn"></td>
                                     </tr>
                                 </table>
                             </form>

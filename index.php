@@ -20,7 +20,7 @@
                             <?php
                             for($a=1; $a <= 5; $a++){
                             ?>
-                                    <li><a href="index.php?cod = <?php echo $a;?>"><?php echo "Marca-($a)"; ?></a></li>
+                                <li><a href="index.php?cod = <?php echo $a;?>"><?php echo "Marca-($a)"; ?></a></li>
                             <?php
                             }
                             ?>
@@ -29,10 +29,11 @@
                     <div id="funcionalidade">
                         <div id="conteiner">
                             <?php for($i=1; $i <= 21; $i++){?>
+                                <a href="exibe.php?cod = <?php echo $i ?>">
                                 <div id="conteudo_especifico">
                                     <div id="central">
                                         <div id="imagem1">
-                                            <a href="index.php?cod = <?php $i ?>"> <img  width="85%" height="85%" src="img/teste.jpg" alt="Produto"> </a>
+                                        <a href="exibe.php?cod = <?php echo $i ?>"><img  width="85%" height="85%" src="img/teste.jpg" alt="Produto"></a>
                                         </div>
                                     </div>
                                     <div id="detalhes">
