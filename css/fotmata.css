@@ -269,13 +269,14 @@ body{
     border: solid 1px rgb(211, 210, 210);
 }
 #imagem{
-    width: 400px;
+    width: 399px;
     height: 500px;
     float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background: white;
+    border-right: solid 1px rgb(201, 201, 201);
 }
 #imagem img{
     display: block;
@@ -285,13 +286,14 @@ body{
 #informes{
     float: left;
     width: 400px;
-    height: 250px;
-    background: rgb(179, 175, 175);
+    height: 249px;
+    background: rgb(252, 252, 252);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border-bottom: solid 1px  rgb(201, 201, 201);
 }
 #texto{
     width: 80%;
