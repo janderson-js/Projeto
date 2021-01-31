@@ -32,8 +32,9 @@
                                 </div>
                             </div>
                             <div id="descricao">
-                                <div id="texto_descricao">
-                                    s
+                                <div id="texto_descricao" style='text-align:center'">
+                                    <h3>Descrição</h3>
+                                    <p>O Lenovo Ideapad S145 tem um design sofisticado leve e compacto. Possui tela antirreflexo de 15.6” para mais conforto visual e definição de imagem. Um notebook perfeito para produtividade e entretenimento com Wireless AC ultrarrápido e teclado numérico.</p>
                                 </div>
                             </div>
                         </div>

@@ -268,12 +268,42 @@ body{
 
     border: solid 1px rgb(211, 210, 210);
 }
-#exibe button{
-    margin-left: 0%;
+#texto ul li{
+    list-style-type: none;
+    color: rgb(53, 52, 52);
+    font-size: 1.3rem;
+    
+}
+#texto ul li:nth-child(2),#texto ul li:nth-child(3),#texto ul li:nth-child(4),#texto ul li:nth-child(5)
+{
+    text-indent: 10% ;
+}
+#texto li:nth-child(1){
+    text-align: center;
+    margin-bottom: 10%;
+    font-weight: bolder;
+    color: black;
+}
+#texto ul li span{
+    font-weight: bolder;
+}
+#texto ul li:nth-child(2) span{
+    text-decoration: line-through;
+    color: red;
+}
+#texto ul li:nth-child(3) span{
+    color: black;
+}
+#texto ul li:nth-child(4) span{
+    color: blue;
+
+}
+#texto ul li:nth-child(5) span{
+    color: rgb(9, 158, 4);
 }
 #imagem{
-    width: 399px;
-    height: 500px;
+    width: 389px;
+    height: 490px;
     float: left;
     display: flex;
     flex-direction: row;
@@ -307,22 +337,31 @@ body{
 }
 #descricao{
     float: left;
-    width: 400px;
+    width: 410px;
     height: 250px;
     background: rgb(252, 252, 252);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 #texto_descricao{
-    width: 80%;
+    width: 93%;
     height: 60%;
     float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+#texto_descricao p{
+    text-indent: 1rem;
+    font-size: 17;
+}
+#texto_descricao h3{
+    text-align: center;
+    margin-left: 20%;
+    color: rgb(117, 117, 117);
 }
 /**/
 /**/
