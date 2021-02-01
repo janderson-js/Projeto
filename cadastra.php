@@ -18,7 +18,7 @@
                         <div id="cadastro">
                             <a href="index.php"><button><span>Voltar</span></button></a>
                             <h1>Cadastro de Produtos</h1>
-                            <form action="processa_cadastra.php" method="post">
+                            <form method="post" action="processa_cadastra.php" enctype="multipart/form-data">
                                 <table id="tabela">
                                     <tr>
                                         <td>Marca:</td>
@@ -38,7 +38,7 @@
                                     </tr>
                                     <tr>
                                         <td>Foto:</td>
-                                        <td> <input type="file" name="foto"></td>
+                                        <td> <p> <input type="file" name="foto" required> </p> </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" align="center"><input type="reset"  value="Limpar campos" class="btn" /> <input type="submit" value="Cadastrar" id="btn_cadastra" class="btn"></td>

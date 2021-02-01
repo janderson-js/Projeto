@@ -302,8 +302,8 @@ body{
     color: rgb(9, 158, 4);
 }
 #imagem{
-    width: 389px;
-    height: 490px;
+    width: 399px;
+    height: 500px;
     float: left;
     display: flex;
     flex-direction: row;
@@ -337,7 +337,7 @@ body{
 }
 #descricao{
     float: left;
-    width: 410px;
+    width: 400px;
     height: 250px;
     background: rgb(252, 252, 252);
     display: flex;

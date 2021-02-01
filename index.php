@@ -28,7 +28,7 @@
                     </div>
                     <div id="funcionalidade">
                         <div id="conteiner">
-                            <?php for($i=1; $i <= 21; $i++){?>
+                            <?php for($i=1; $i <= 5; $i++){?>
                                 <a href="exibe.php?cod = <?php echo $i ?>">
                                 <div id="conteudo_especifico">
                                     <div id="central">
