@@ -59,7 +59,7 @@
                                 <div id="conteudo_especifico">
                                     <div id="central">
                                         <div id="imagem1">
-                                        <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><img  width="85%" height="85%" src="<?php echo "$dados[5]"; ?>" alt="Produto"></a>
+                                        <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><img  src="<?php echo "$dados[5]"; ?>" alt="Produto"></a>
                                         </div>
                                     </div>
                                     <div id="detalhes">
