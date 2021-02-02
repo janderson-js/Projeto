@@ -362,7 +362,6 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-bottom: solid 1px  rgb(201, 201, 201);
 }
 #texto{
     width: 80%;
