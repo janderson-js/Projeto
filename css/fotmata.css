@@ -157,9 +157,7 @@ body{
     width: 90%;
     height: 90%;
 }
-#imagem1:hover ~ #detalhes a {
-    color: red;
-}
+
 /* Formata detalhes*/
 #detalhes{
     width: 100%;
@@ -180,8 +178,13 @@ body{
     font-weight: bolder;
     margin-top: 5%;
 }
-
-
+#detalhes ul li:nth-child(1) a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#detalhes:hover ul li a{
+    text-decoration: underline;
+}
 #detalhes ul li:nth-child(2),#detalhes ul li:nth-child(3),#detalhes ul li:nth-child(4),#detalhes ul li:nth-child(5)
 {
     text-indent: 10% ;
