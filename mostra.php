@@ -22,7 +22,7 @@
                             <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><img  src="<?php echo "$dados[5]"; ?>" alt="Produto"></a>
                             </div>
                         </div>
-                        <div id="detalhes" class="hover">
+                        <div id="detalhes">
                             <ul>
                                 <li><a href="exibe.php?cod=<?php echo "$dados[0]";?>"><?php echo "$dados[1]"." $dados[2]";?></a></li>
                                 <li>de:  <span>  <?php echo number_format($dados[3], 2, ',', '.');?>$ </span> </li>
