@@ -15,7 +15,7 @@ body{
     border: solid 1px;
     border-color: transparent;
     border-top: none;    
-    
+    max-width: 70%;
     min-height: 800px;
 }
 #navegacao{
@@ -40,7 +40,10 @@ body{
     height: 100px;
     max-height: 150px;
     background: rgb(255, 252, 79);
-    align-items: center;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     
 }
 #logo{
@@ -52,14 +55,31 @@ body{
 }
 #pesquisar{
     background: greenyellow;
-    height: 50px;
+    height: 100px;
+    max-width:600px;
+    max-height: 150px;
     width: 600px;
-    border: solid 1px;
-    float: left;
     float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
+}
+#faz_pesquisa{
+    float: left;
+    width: 90%;
+    height: 90%;
+    background: chocolate;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#faz_pesquisa input{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Formata a Div conteudo */
 #conteudo{
@@ -121,9 +141,6 @@ body{
 }
 #btn_cadastrar span{
     font-weight: bolder;
-}
-#funcionalidade{
-    max-width: 70%;
 }
 /* Formata Div Conteiner*/
 #conteiner{

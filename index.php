@@ -14,10 +14,12 @@
                         Logo
                     </div>
                     <div id="pesquisar">
-                        <form action="index.php">
-                            <input type="text" name="pesquisa">
-                            <input type="submit">
-                        </form>
+                        <div id="faz_pesquisa">
+                            <form action="index.php">
+                                <input type="text" name="pesquisa" >
+                                <input type="submit">
+                            </form>
+                        </div>
                     </div>
                     <div id="interacao">
                         asda
