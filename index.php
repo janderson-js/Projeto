@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -11,6 +12,15 @@
                 <div id="top">
                     <div id="logo">
                         Logo
+                    </div>
+                    <div id="pesquisar">
+                        <form action="index.php">
+                            <input type="text" name="pesquisa">
+                            <input type="submit">
+                        </form>
+                    </div>
+                    <div id="interacao">
+                        asda
                     </div>
                 </div>
                 <div id="conteudo">
