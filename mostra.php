@@ -73,9 +73,9 @@
                         </div>
                     </div>
  <?php          }?>
-            
+            </div>
 <?php  }elseif($marca == true){?>
-            <div id="funcionalidade"> 
+            <d id="funcionalidade"> 
                 <div id="navegacao">
                     <p><a href="index.php">Home </a> > <a href="index.php?marca=<?php echo "$marca";?>"><?php echo "$marca";?></a></p>
                 </div>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
 <?php           }?>
-            </div>
+            </d>
 <?php       
         }
     }?>
