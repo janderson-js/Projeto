@@ -54,7 +54,6 @@ body{
     max-height:150px;
 }
 #pesquisar{
-    background: greenyellow;
     height: 100px;
     max-width:600px;
     max-height: 150px;
@@ -62,14 +61,12 @@ body{
     float: left;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;  
 }
 #faz_pesquisa{
     float: left;
-    width: 500px;
-    height: 50px;
-    background: chocolate;
+    width: 450px;
+    height: 55px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -77,18 +74,36 @@ body{
     box-sizing: border-box;
 }
 #lbl_form_pesquisar{
-    background: rgb(230, 230, 230);
+    background: white;
+    border: solid 1px rgb(243, 240, 240);
+    border-radius: 3px;
     margin-top: 1%;
     padding: 1%;
-    width: 200;
-    height: 15;
     text-align: center;
     display: flex;
+    box-shadow: 1px 2px 0px 0px rgb(236, 235, 235);
+}
+::-webkit-input-placeholder{
+    color: rgb(199, 199, 199);
+}
+input:-webkit-autofill{
+    width: 450px;
+}
+#lbl_form_pesquisar input:focus{
+    outline: 0;
 }
 #lbl_form_pesquisar input:nth-child(1){
     width: 400px;
     border: none;
-    border-right: solid 1px;
+    border-right: solid 1px rgb(221, 217, 217);
+    background: white;
+}
+#lbl_form_pesquisar button{
+    width: 50px;
+    height:30px;
+    color:  rgb(199, 196, 196);
+    background: white;
+    border: none;
 }
 /* Formata a Div conteudo */
 #conteudo{
