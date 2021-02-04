@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="css/fotmata.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
     <body>
         <div id="pagina">
@@ -16,8 +17,10 @@
                     <div id="pesquisar">
                         <div id="faz_pesquisa">
                             <form action="index.php">
-                                <input type="text" name="pesquisa" >
-                                <input type="submit">
+                               <label for="" id="lbl_form_pesquisar">
+                                    <input type="text" name="pesquisa" placeholder="Pesquisar" >
+                                    <button type="submit"><i class="fas fa-search"></i></i></button>
+                               </label>
                             </form>
                         </div>
                     </div>

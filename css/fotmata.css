@@ -67,8 +67,8 @@ body{
 }
 #faz_pesquisa{
     float: left;
-    width: 90%;
-    height: 90%;
+    width: 500px;
+    height: 50px;
     background: chocolate;
     margin-top: auto;
     margin-bottom: auto;
@@ -76,9 +76,19 @@ body{
     margin-right: auto;
     box-sizing: border-box;
 }
-#faz_pesquisa input{
-   
-   text-align: center;
+#lbl_form_pesquisar{
+    background: rgb(230, 230, 230);
+    margin-top: 1%;
+    padding: 1%;
+    width: 200;
+    height: 15;
+    text-align: center;
+    display: flex;
+}
+#lbl_form_pesquisar input:nth-child(1){
+    width: 400px;
+    border: none;
+    border-right: solid 1px;
 }
 /* Formata a Div conteudo */
 #conteudo{

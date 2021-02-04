@@ -7,6 +7,9 @@
     if($pesquisa == true){?>
         
         <div id="funcionalidade">
+            <div id="navegacao">
+                <p><a href="index.php">Home </a> > <a href="index.php?marca=<?php echo "$pesquisa";?>"><?php echo "$pesquisa";?></a></p>
+            </div>
         <?php       
                         $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto from produtos
                                                 WHERE marca LIKE '%$pesquisa%'";
