@@ -89,8 +89,11 @@ body{
 input:-webkit-autofill{
     width: 450px;
 }
-#lbl_form_pesquisar input:focus{
+#lbl_form_pesquisar input:focus, button:focus{
     outline: 0;
+}
+#lbl_form_pesquisar button:hover{
+    cursor: pointer;
 }
 #lbl_form_pesquisar input:nth-child(1){
     width: 400px;
@@ -104,6 +107,19 @@ input:-webkit-autofill{
     color:  rgb(199, 196, 196);
     background: white;
     border: none;
+}
+/* formata interacao*/
+#interacao{
+    width: 23.5%;
+    height: 100%;
+    border: solid 1px;
+    float: left;
+    text-align: right;
+}
+#interacao label{
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 /* Formata a Div conteudo */
 #conteudo{

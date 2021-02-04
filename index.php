@@ -18,14 +18,14 @@
                         <div id="faz_pesquisa">
                             <form action="index.php">
                                <label for="" id="lbl_form_pesquisar">
-                                    <input type="text" name="pesquisa" placeholder="Pesquisar" >
+                                    <input type="text" autocomplete="off" name="pesquisa" placeholder="Pesquisar" >
                                     <button type="submit"><i class="fas fa-search"></i></i></button>
                                </label>
                             </form>
                         </div>
                     </div>
                     <div id="interacao">
-                        asda
+                        <label for=""> <i class="far fa-user-circle"></i> </label>
                     </div>
                 </div>
                 <div id="conteudo">
