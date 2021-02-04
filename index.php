@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div id="interacao">
-                        <label for=""> <i class="far fa-user-circle"></i> </label>
+                        <label for=""> <i class="far fa-user-circle"></i></label>
                     </div>
                 </div>
                 <div id="conteudo">

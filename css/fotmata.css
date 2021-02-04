@@ -121,6 +121,9 @@ input:-webkit-autofill{
     margin-top: auto;
     margin-bottom: auto;
 }
+#interacao label:hover{
+    cursor: pointer;
+}
 /* Formata a Div conteudo */
 #conteudo{
     width: 100%;
