@@ -8,7 +8,7 @@ body{
 
 #funcionalidade{
     
-    width: 75%;
+    width: 70%;
     float: left;
     border: solid 1px;
     border-radius: 0px 0px 35px 35px; 
@@ -43,7 +43,7 @@ body{
     float: left;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     
 }
 #logo{
@@ -52,6 +52,10 @@ body{
     width: 400px;
     height:100px;
     max-height:150px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
 }
 #pesquisar{
     height: 100px;
@@ -83,6 +87,17 @@ body{
     display: flex;
     box-shadow: 1px 2px 0px 0px rgb(236, 235, 235);
 }
+#dados{
+    position: relative;
+    float: left;
+    margin-right: -102px;
+    margin-top: 500px;
+    z-index: 1;
+    display: none;
+    width: 200px;
+    height: 400px;
+    background: greenyellow;
+}
 ::-webkit-input-placeholder{
     color: rgb(199, 199, 199);
 }
@@ -97,6 +112,9 @@ input:-webkit-autofill{
 }
 #lbl_form_pesquisar input:nth-child(1){
     width: 400px;
+    margin-top: 2px;
+    margin-left: 2%;
+    height:25px;
     border: none;
     border-right: solid 1px rgb(221, 217, 217);
     background: white;
@@ -104,7 +122,7 @@ input:-webkit-autofill{
 #lbl_form_pesquisar button{
     width: 50px;
     height:30px;
-    color:  rgb(199, 196, 196);
+    color:  rgb(221, 217, 217);
     background: white;
     border: none;
 }
@@ -112,17 +130,30 @@ input:-webkit-autofill{
 #interacao{
     width: 23.5%;
     height: 100%;
-    border: solid 1px;
     float: left;
-    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
 }
-#interacao label{
-    font-size: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
+#login{
+    
+    padding: 26px;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
 }
-#interacao label:hover{
+#login button{
+    font-size: 40px;
+    background: transparent;
+    border: none;
     cursor: pointer;
+}
+#login {
+    cursor: pointer;
+}
+#login:hover{
+    border: solid 1px rgb(224, 221, 221, 0.5);
 }
 /* Formata a Div conteudo */
 #conteudo{
@@ -204,11 +235,51 @@ input:-webkit-autofill{
     margin-top: 20px;
     border: solid 1px #cccbcb;
     border-radius: 30px 30px 30px 30px;
+    box-sizing: border-box;
 }
 #conteudo_especifico:hover{
     box-shadow:  10px 10px 20px 5px rgb(209, 209, 209);
 }
-
+#acao{
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.botao_detalhes,#botao_comprar{
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px; 
+}
+.botao_detalhes button, #botao_comprar button{
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    border: transparent;
+    font-weight: bolder;
+    outline: 0;
+    border-radius: 15px;
+    color: white;
+}
+.botao_detalhes button:hover, #botao_comprar button:hover{
+    border: solid 1px black;
+}
+#botao_comprar button{
+    background: green;
+}
+#botao_comprar button:hover{
+    background: rgb(3, 105, 3);
+}
+.botao_detalhes button{
+    background: rgb(180, 20, 9);
+}
+.botao_detalhes button:hover{
+    background: rgb(141, 15, 5);
+}
 /* Formta  */
 #conteiner #conteudo_especifico:nth-child(1),#conteiner #conteudo_especifico:nth-child(2),#conteiner #conteudo_especifico:nth-child(3)
 {
@@ -220,14 +291,12 @@ input:-webkit-autofill{
 /* Formata Imagens*/
 #imagem1{
     width: 90%;
-    
     height: 200px;
-
-    
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
 }
 #imagem1 img{
     
@@ -289,7 +358,7 @@ input:-webkit-autofill{
     font-weight: bolder;
 }
 #detalhes ul > li:nth-child(5){
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 #detalhes ul > li:nth-child(2){
     margin-top: 5%;
@@ -297,7 +366,7 @@ input:-webkit-autofill{
 /* Div cadastra */
 #funcionalidade2{
     width: 100%;
-    height: 100%;
+    min-height: 600px;
     float: left;
     display: flex;
     flex-direction: row;
@@ -306,7 +375,7 @@ input:-webkit-autofill{
     align-items: center;
     box-sizing: border-box;
 }
-#funcionalidade2 button:nth-child(1){
+#funcionalidade2 #cadastra_btn_volta{
     border-radius: 5px;
     border:solid 1px rgb(151, 148, 148);
     width: 50px;
@@ -324,7 +393,7 @@ input:-webkit-autofill{
 #funcionalidade2 form{
     margin-top: 5%;
 }
-#funcionalidade2 button:nth-child(1) span{
+#funcionalidade2 #cadastra_btn_volta span{
     font-weight: bolder;
 }
 #cadastro table{
@@ -339,7 +408,7 @@ input:-webkit-autofill{
     font-weight: bold;
 }
 
-#funcionalidade2 button:nth-child(1):hover{
+#funcionalidade2 #cadastra_btn_volta:hover{
     background: rgb(255, 252, 79);
 }
 /* Formata Cadastra */
@@ -380,6 +449,27 @@ input:-webkit-autofill{
     background: white;
 
     border: solid 1px rgb(211, 210, 210);
+}
+#exibe_btn_volta{
+    margin-left: -60%;
+    margin-top: 2%;
+    float: left;
+}
+#funcionalidade2 #exibe_btn_volta span{
+    font-weight: bolder;
+}
+#funcionalidade2 #exibe_btn_volta:hover{
+    background: rgb(255, 252, 79);
+}
+#funcionalidade2 #exibe_btn_volta{
+    border-radius: 5px;
+    border:solid 1px rgb(151, 148, 148);
+    width: 50px;
+    height: 25px;
+    float: left;
+    margin-left: -60%;
+    margin-top: -3%;
+    background: white;
 }
 #texto ul li{
     list-style-type: none;
@@ -488,7 +578,6 @@ input:-webkit-autofill{
 /* Formata a Div radape*/
 #rodape{
     float: left;
-    margin-top: 2%;
     width: 100%;
     height: 100px;
     background:#f0f3f0;

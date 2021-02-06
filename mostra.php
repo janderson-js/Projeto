@@ -36,10 +36,18 @@
                                             <?php  $preco2 = ($dados[3] - (10/100 * $dados[3]))?>
                                             <li> à vista no boleto: <span><?php echo number_format($preco2, 2, ',', '.');?>$</span> </li>
                                         </ul>
+                                        <div id="acao">
+                                            <div class="botao_detalhes">
+                                                    <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-plus"></i>detalhes</button></a>
+                                            </div>
+                                            <div id="botao_comprar">
+                                                    <a href="#"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-         <?php      }?>
+            <?php      }?>
          </div>
     <?php }else{
         @$marca = $_GET["marca"];
@@ -58,7 +66,7 @@
                         <div id="conteudo_especifico">
                             <div id="central">
                                 <div id="imagem1">
-                                <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><img  src="<?php echo "$dados[5]"; ?>" alt="Produto"></a>
+                                    <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><img  src="<?php echo "$dados[5]"; ?>" alt="Produto"></a>
                                 </div>
                             </div>
                             <div id="detalhes">
@@ -72,6 +80,14 @@
                                     <?php  $preco2 = ($dados[3] - (10/100 * $dados[3]))?>
                                     <li> à vista no boleto: <span><?php echo number_format($preco2, 2, ',', '.');?>$</span> </li>
                                 </ul>
+                               <div id="acao">
+                                   <div class="botao_detalhes">
+                                        <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-plus"></i>detalhes</button></a>
+                                   </div>
+                                   <div id="botao_comprar">
+                                        <a href="#"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
+                                   </div>
+                               </div>
                             </div>
                         </div>
                     </div>
@@ -108,6 +124,14 @@
                                     <?php  $preco2 = ($dados[3] - (10/100 * $dados[3]))?>
                                     <li> à vista no boleto: <span><?php echo number_format($preco2, 2, ',', '.');?>$</span> </li>
                                 </ul>
+                                <div id="acao">
+                                   <div class="botao_detalhes">
+                                        <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-plus"></i>detalhes</button></a>
+                                   </div>
+                                   <div id="botao_comprar">
+                                        <a href="#"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
+                                   </div>
+                               </div>
                             </div>
                         </div>
                     </div>

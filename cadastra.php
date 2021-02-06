@@ -8,52 +8,65 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
     <body>
-        <div id="pagina">
-        <div id="teste">
-                <div id="top">
-                    <div id="logo">
-                        Logo
-                    </div>
+        <div id="top">
+            <a href="index.php">
+                <div id="logo">
+                    <img src="img/PHP vitrine Logotipo.png" alt="logo" id="logo_top" width="100%" height="100%">
                 </div>
-                <div id="conteudo">
-                    <div id="funcionalidade2">
-                        <div id="cadastro">
-                            <a href="index.php"><button><span>Voltar</span></button></a>
-                            <h1>Cadastro de Produtos</h1>
-                            <form method="post" action="processa_cadastra.php" enctype="multipart/form-data">
-                                <table id="tabela">
-                                    <tr>
-                                        <td>Marca:</td>
-                                        <td><input type="text" name="marca" placeholder="Marca"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Modelo:</td>
-                                        <td><input type="text" name="modelo" placeholder="Modelo"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Preço:</td>
-                                        <td><input type="text" name="preco" placeholder="Preço"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Descrição:</td>
-                                        <td><textarea type="text" name="descricao" placeholder="Descricao"></textarea></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Foto:</td>
-                                        <td> <p> <input type="file" name="foto" required> </p> </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" align="center"><input type="reset"  value="Limpar campos" class="btn" /> <input type="submit" value="Cadastrar" id="btn_cadastra" class="btn"></td>
-                                    </tr>
-                                </table>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div id="rodape">
-                    sadasd
+            </a>
+            <div id="pesquisar">
+                <div id="faz_pesquisa">
+                    <form action="index.php">
+                        <label for="" id="lbl_form_pesquisar">
+                            <input type="text" autocomplete="off" name="pesquisa" placeholder="Pesquisar" >
+                            <button type="submit"><i class="fas fa-search"></i></i></button>
+                        </label>
+                    </form>
                 </div>
             </div>
+            <div id="interacao">
+                <div id="login">
+                    <label for=""> <i class="far fa-user-circle"></i></label>
+                </div>
+            </div>
+        </div>
+        <div id="conteudo">
+            <div id="funcionalidade2">
+                <div id="cadastro">
+                    <a href="index.php"><button id="cadastra_btn_volta"><span>Voltar</span></button></a>
+                    <h1>Cadastro de Produtos</h1>
+                    <form method="post" action="processa_cadastra.php" enctype="multipart/form-data">
+                        <table id="tabela">
+                            <tr>
+                                <td>Marca:</td>
+                                <td><input type="text" name="marca" placeholder="Marca"></td>
+                            </tr>
+                            <tr>
+                                <td>Modelo:</td>
+                                <td><input type="text" name="modelo" placeholder="Modelo"></td>
+                            </tr>
+                            <tr>
+                                <td>Preço:</td>
+                                <td><input type="text" name="preco" placeholder="Preço"></td>
+                            </tr>
+                            <tr>
+                                <td>Descrição:</td>
+                                <td><textarea type="text" name="descricao" placeholder="Descricao"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Foto:</td>
+                                <td> <p> <input type="file" name="foto" required> </p> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center"><input type="reset"  value="Limpar campos" class="btn" /> <input type="submit" value="Cadastrar" id="btn_cadastra" class="btn"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="rodape">
+            sadasd
         </div>
     </body>
 </html>
