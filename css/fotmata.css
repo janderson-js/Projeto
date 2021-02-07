@@ -122,24 +122,61 @@ input:-webkit-autofill{
     height: 100%;
     float: left;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    
+    flex-direction: row;
+}
+#carrinho{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+#carrinho a{
+    color: black;
+}
+#carro{
+    margin-top: 10px;
+    float: left;
+}
+#carro i{
+    font-size: 40px;
+}
+#texto_carro{
+    margin: 20px;
+    float: left;
+    margin-left: 0;
+}
+#texto_carro span{
+    margin-left: 10px;
+}
+#carrinho:hover span{
+    text-decoration: underline;
+}
+#carrinho a:hover{
+    color: rgb(194, 192, 190);
 }
 #login{
-    
-    padding: 26px;
     box-sizing: border-box;
     height: 100px;
     width: 100px;
+    max-width: 100px;
+    min-width: 100px;
     position: relative;
     float: right;
+    z-index: 2;
 }
 #login button{
     font-size: 40px;
     background: transparent;
     border: none;
     cursor: pointer;
+    width: 100px;
+    height: 100px;
 }
 #login {
     cursor: pointer;
@@ -147,12 +184,12 @@ input:-webkit-autofill{
 #login:hover{
     border: solid 1px rgb(224, 221, 221, 1);
     border-bottom: none;
+    border-right: none;
 }
 #dados1{
     position: relative;
-    float: left;
-    margin-right: -102px;
-    margin-top:300px;
+    margin-top:0px;
+    margin-left: -100px;
     width: 200px;
     height: 200px;
     z-index: 1;

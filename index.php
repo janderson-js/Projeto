@@ -27,15 +27,18 @@
             </div>
             <div id="conteiner_interacao">
                 <div id="carrinho">
-
+                    <a href="#">
+                        <div id="carro"><i class="fas fa-shopping-cart"></i></div>
+                        <div id="texto_carro"><span>ver carrinho</span></div>
+                    </a>
                 </div>
                 <div id="login">
                     <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>
-                </div>
-                <div id="dados1" class="dados">
+                    <div id="dados1" class="dados">
                     <ul>
                         <li><a href="#">Meus dados</a></li>
                     </ul>
+                </div>
                 </div>
             </div>
         </div>
