@@ -6,9 +6,10 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/fotmata.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <script defer src="css/teste.js"></script>
     </head>
     <body>
-        <div id="top">
+    <div id="top">
             <a href="index.php">
                 <div id="logo">
                     <img src="img/PHP vitrine Logotipo.png" alt="logo" id="logo_top" width="100%" height="100%">
@@ -18,15 +19,26 @@
                 <div id="faz_pesquisa">
                     <form action="index.php">
                         <label for="" id="lbl_form_pesquisar">
-                            <input type="text" autocomplete="off" name="pesquisa" placeholder="Pesquisar" >
+                            <input type="text" autocomplete="off" name="pesquisa" placeholder="Pesquisar..." >
                             <button type="submit"><i class="fas fa-search"></i></i></button>
                         </label>
                     </form>
                 </div>
             </div>
-            <div id="interacao">
+            <div id="conteiner_interacao">
+                <div id="carrinho">
+                    <a href="#">
+                        <div id="carro"><i class="fas fa-shopping-cart"></i></div>
+                        <div id="texto_carro"><span>ver carrinho</span></div>
+                    </a>
+                </div>
                 <div id="login">
-                    <label for=""> <i class="far fa-user-circle"></i></label>
+                    <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>
+                    <div id="dados1" class="dados">
+                    <ul>
+                        <li><a href="#">Meus dados</a></li>
+                    </ul>
+                </div>
                 </div>
             </div>
         </div>
