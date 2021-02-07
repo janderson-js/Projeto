@@ -87,17 +87,7 @@ body{
     display: flex;
     box-shadow: 1px 2px 0px 0px rgb(236, 235, 235);
 }
-#dados{
-    position: relative;
-    float: left;
-    margin-right: -102px;
-    margin-top: 500px;
-    z-index: 1;
-    display: none;
-    width: 200px;
-    height: 400px;
-    background: greenyellow;
-}
+
 ::-webkit-input-placeholder{
     color: rgb(199, 199, 199);
 }
@@ -127,7 +117,7 @@ input:-webkit-autofill{
     border: none;
 }
 /* formata interacao*/
-#interacao{
+#conteiner_interacao{
     width: 23.5%;
     height: 100%;
     float: left;
@@ -142,6 +132,8 @@ input:-webkit-autofill{
     box-sizing: border-box;
     height: 100px;
     width: 100px;
+    position: relative;
+    float: right;
 }
 #login button{
     font-size: 40px;
@@ -153,8 +145,43 @@ input:-webkit-autofill{
     cursor: pointer;
 }
 #login:hover{
-    border: solid 1px rgb(224, 221, 221, 0.5);
+    border: solid 1px rgb(224, 221, 221, 1);
+    border-bottom: none;
 }
+#dados1{
+    position: relative;
+    float: left;
+    margin-right: -102px;
+    margin-top:300px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    background:white;
+    border-radius: 0px 0px 0px 10px;
+    box-sizing: border-box;
+    border-left: gray;
+    box-shadow:-4px 5px 5px 3px rgba(192, 191, 191, 0.5);
+}
+.dados{
+    display: none;
+    
+}
+#dados1 ul li{
+    list-style-type: none;
+    text-align: center;
+    padding: 15px;
+}
+#dados1 ul li:hover{
+    background-color: #f0f1f0;
+    cursor: pointer;
+}
+#dados1 ul li a{
+   text-decoration: none;
+   color: rgb(138, 138, 138);
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bolder;
+}
+
 /* Formata a Div conteudo */
 #conteudo{
     width: 100%;
