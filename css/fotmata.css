@@ -626,8 +626,9 @@ input:-webkit-autofill{
     flex-wrap: wrap;
 }
 #texto_descricao p{
-    text-indent: 1rem;
+    text-indent: 2rem;
     font-size: 17;
+    text-align: justify;
 }
 #texto_descricao h3{
     text-align: center;
