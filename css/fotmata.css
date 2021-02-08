@@ -215,6 +215,7 @@ input:-webkit-autofill{
 #dados1 ul li:hover{
     background-color: #f0f1f0;
     cursor: pointer;
+    text-decoration: underline;
 }
 #dados1 ul li a{
    text-decoration: none;
@@ -464,7 +465,7 @@ input:-webkit-autofill{
 #funcionalidade2 #cadastra_btn_volta span{
     font-weight: bolder;
 }
-#cadastro table{
+.cadastro_tabela table{
     font-weight: bolder;
     color: rgb(66, 64, 64);
 }
@@ -485,6 +486,9 @@ input:-webkit-autofill{
 }
 #tabela td{
     padding: 20px;
+}
+#tabela input{
+    width: 250px;
 }
 #cadastro{
     border: solid 1px;
@@ -509,6 +513,28 @@ input:-webkit-autofill{
 #funcionalidade #funcao:nth-child(1){
     margin-top: 2%;
     margin-bottom: -2%;
+}
+/* Cadastro de usuario */
+#cadastro_user{
+    border: solid 1px;
+    border-color: rgb(209, 209, 209) ;
+    background: white;
+    box-shadow: 23px 23px 10px 5px rgb(224, 222, 222);
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#cadastro_user table input{
+   width: 250px;
+}
+#cadastro_user table td{
+    padding: 5px;
+}
+.btn_largura{
+    width: 50px;
+}
+#cadastro_user table{
+    padding: 20px;
+    width: 400px;
 }
 /* Exibe*/
 #exibe{

@@ -36,9 +36,8 @@
                     <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>
                     <div id="dados1" class="dados">
                     <ul>
-                        <li><a href="#">Meus dados</a></li>
-                        <li><a href="#">Meus dados</a></li>
-                        <li><a href="#">Meus dados</a></li>
+                        <li><a href="login.php">Login</a></li>
+                        <li><a href="cadastro_user.php">Cadastrar</a></li>
                     </ul>
                 </div>
                 </div>

@@ -44,30 +44,62 @@
         </div>
         <div id="conteudo">
             <div id="funcionalidade2">
-                <div id="cadastro">
+                <div id="cadastro_user" class="cadastro_tabela">
                     <a href="index.php"><button id="cadastra_btn_volta"><span>Voltar</span></button></a>
-                    <h1>Cadastro de Produtos</h1>
-                    <form method="post" action="processa_cadastra.php" enctype="multipart/form-data">
-                        <table id="tabela">
+                    <h1>Cadastro de Usuarios</h1>
+                    <form method="post" action="processa_cadastra_user.php" enctype="multipart/form-data">
+                        <table id="tabela_cadastro_user" class="tabela">
                             <tr>
-                                <td>Marca:</td>
-                                <td><input type="text" name="marca" placeholder="Marca"></td>
+                                <td>Nome:</td>
+                                <td><input type="text" name="nome" placeholder="Ex: José"></td>
                             </tr>
                             <tr>
-                                <td>Modelo:</td>
-                                <td><input type="text" name="modelo" placeholder="Modelo"></td>
+                                <td>Sobrenome:</td>
+                                <td><input type="text" name="sobrenome" placeholder="Ex: Souza da Silva"></td>
                             </tr>
                             <tr>
-                                <td>Preço:</td>
-                                <td><input type="text" name="preco" placeholder="Preço"></td>
+                                <td>email:</td>
+                                <td><input type="email" name="login" autocomplete="off"   placeholder="Ex:josésouza@gmail.com"></td>
                             </tr>
                             <tr>
-                                <td>Descrição:</td>
-                                <td><textarea type="text" name="descricao" placeholder="Descricao"></textarea></td>
+                                <td>Senha:</td>
+                                <td><input type="password" name="senha" placeholder="*********"></td>
                             </tr>
                             <tr>
                                 <td>Foto:</td>
-                                <td> <p> <input type="file" name="foto" required> </p> </td>
+                                <td> <p> <input type="file" name="foto" > </p> </td>
+                            </tr>
+                            <tr>
+                                <td>Telefone:</td>
+                                <td><input type="text" name="telefone" placeholder="Ex: 61 9 0000-0000"></td>
+                            </tr>
+                            <tr>
+                                <td>Telefone de contato:</td>
+                                <td><input type="text" name="telefoneContato" placeholder="Ex: 61 9 0000-0000"></td>
+                            </tr>
+                            <tr>
+                                <td>Cep:</td>
+                                <td><input type="text" name="cep" placeholder="Ex: 72621-411"></td>
+                            </tr>
+                            <tr>
+                                <td>Cidade:</td>
+                                <td><input type="text" name="cidade" placeholder="Ex: Brasilia"></td>
+                            </tr>
+                            <tr>
+                                <td>Bairro:</td>
+                                <td><input type="text" name="bairro" placeholder="Ex: Recanto das Emas"></td>
+                            </tr>
+                            <tr>
+                                <td>Quadra/rua:</td>
+                                <td><input type="text" name="quadraRua" placeholder="Ex:Qd 300 / Rua 2"></td>
+                            </tr>
+                            <tr>
+                                <td>Numero:</td>
+                                <td><input type="text" name="numero" placeholder="Ex: casa 2"></td>
+                            </tr>
+                            <tr>
+                                <td>Complemento:</td>
+                                <td><input type="text" name="complemento" placeholder="Ex: proximo a escola"></td>
                             </tr>
                             <tr>
                                 <td colspan="2" align="center"><button type="reset"  value="Limpar campos" class="btn">Limpar</button> <button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Cadastrar</button></td>
