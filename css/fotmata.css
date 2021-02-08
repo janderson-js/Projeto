@@ -536,6 +536,27 @@ input:-webkit-autofill{
     padding: 20px;
     width: 400px;
 }
+/* Login user*/
+#login_user{
+    width: 400px;
+    height: 400px;
+    background: white;
+}
+.lbl{
+    background: rgb(230, 230, 230);
+    margin-top: 4%;
+    padding: 4%;
+    width: 200px;
+    height: 15;
+    text-align: center;
+    display: flex;
+}
+.lbl input{
+    background: rgb(230, 230, 230);
+    border: none;
+    margin-left: 5%;
+    width: 100%;
+}
 /* Exibe*/
 #exibe{
     width: 1000px;
