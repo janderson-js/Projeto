@@ -6,7 +6,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/fotmata.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-        <script defer src="css/teste.js"></script>
+        <script defer src="js/teste.js"></script>
     </head>
     <body>
         <div id="top">
@@ -36,6 +36,8 @@
                     <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>
                     <div id="dados1" class="dados">
                     <ul>
+                        <li><a href="#">Meus dados</a></li>
+                        <li><a href="#">Meus dados</a></li>
                         <li><a href="#">Meus dados</a></li>
                     </ul>
                 </div>
