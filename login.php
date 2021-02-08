@@ -46,16 +46,17 @@
             <div id="funcionalidade2">
                 <div id="login_user">
                     <div id="for_login">
+                        <h2>Login user</h2>
                         <form method="post" action="processa_login.php">
                             <label for="" class="lbl">
                                 <i class="fas fa-user"></i>
-                                <input type="text" name="login" placeholder="Login:" required>
+                                <input type="email" name="login" placeholder="Login:" required>
                             </label>
                             <label for="" class="lbl">
                                 <i class="fas fa-lock"></i>
                                 <input type="password" name="senha" placeholder="******" required>
                             </label>
-                            <input type="submit" value="Entrar"  id="btn">
+                            <button type="submit" value="Entrar">Entrar</button>
                         </form>
                     </div>
                 </div>

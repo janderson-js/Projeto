@@ -541,6 +541,28 @@ input:-webkit-autofill{
     width: 400px;
     height: 400px;
     background: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: solid 1px rgb(209, 209, 209);
+    box-shadow: 9px 7px 5px rgb(224, 222, 222);
+}
+#for_login{
+    text-align: center;
+}
+#for_login button{
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10%;
+    width: 60px;
+    height: 30px;
+    border: solid 1px rgb(54, 53, 53);
+}
+#for_login button:hover{
+    background: rgb(255, 252, 79);
 }
 .lbl{
     background: rgb(230, 230, 230);
@@ -556,6 +578,7 @@ input:-webkit-autofill{
     border: none;
     margin-left: 5%;
     width: 100%;
+    outline: 0;
 }
 /* Exibe*/
 #exibe{
