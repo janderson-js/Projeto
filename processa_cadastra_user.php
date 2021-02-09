@@ -15,21 +15,22 @@
     $bairro = $_POST["bairro"];
     $quadraRua = $_POST["quadraRua"];
     $numero = $_POST["numero"];
-    @$complemento = $_POST["complemento"];
+    $complemento = $_POST["complemento"];
+
 
     $conecta = mysqli_connect("localhost","root","","vitrine");
     
-    $sql_cadastra_user = "INSERT INTO usuarios (`cod_user`,`nome`,`sobrenome`) values (NULL,`$nome`,`$sobrenome`";
+    $sql_cadastra_user = "INSERT INTO usuarios (`cod_user`,`nome`,`sobrenome`) VALUES (NULL,`$nome`,`$sobrenome`);";
 
     $sql_pega_cod_user = "SELECT max(cod_user) AS id FROM usuarios LIMIT 1";
 
-    $resul_cadastra = mysqli_query ($conecta, $sql_cadastra_user);
+    $resul_cadastra_user = mysqli_query ($conecta, $sql_cadastra_user);
 
     $resul_pega_cod_user = mysqli_query ($conecta, $sql_pega_cod_user);
 
     $recebe_cod_user = mysqli_fetch_row($resul_pega_cod_user);
 
-    if ($resul_cadastra) { 
+    if ($resul_cadastra_user) { 
 
         $cod_user = $recebe_cod_user[0];
 
@@ -52,12 +53,12 @@
                 location.href = ('index.php') 
             </script>";	
     }else { 		
-        echo "<script> 
-                alert ('ocorreu um erro no servidor. Tente de novo') 
-             </script>";
+        // echo "<script> 
+        //         alert ('ocorreu um erro no servidor. Tente de novo') 
+        //      </script>";
 
-        echo "<script> 
-                location.href = ('cadastra_user.php') 
-              </script>";	
+        // echo "<script> 
+        //         location.href = ('cadastro_user.php') 
+        //       </script>";	
     }	  
 ?>
