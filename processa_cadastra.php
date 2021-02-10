@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $conectar = mysqli_connect("localhost","root","","vitrine_php");
+    $conectar = mysqli_connect("localhost","root","","vitrine");
 
     $marca = $_POST["marca"];
     $modelo = $_POST["modelo"];
@@ -12,9 +12,9 @@
 	$foto_nome = "img/".$foto["name"];
 	move_uploaded_file($foto["tmp_name"], $foto_nome);
 
-    $sql_cadastra = "INSERT INTO produtos (marca, modelo, preco, descricao,foto)
-                        VALUES
-                    ('$marca','$modelo','$preco','$descricao','$foto_nome')";
+    $sql_cadastra = "INSERT INTO produtos (`cod_prod`,`vendas_cod_ven`,`marca`,`modelo`,`preco`,`descricao`,`foto`,`status_prod`) 
+                                  VALUES 
+                    (NULL,NULL,'$marca','$modelo','$preco','$descricao','$foto_nome',NULL)";
     
     $sql_result_cadastra = mysqli_query($conectar,$sql_cadastra);
 
@@ -30,8 +30,8 @@
 				alert ('ocorreu um erro no servidor ao tentar cadastrar') 
 			  </script>";
 		
-		echo "<script> 
-				location.href = ('cadastra.php') 
-			  </script>";
+		// echo "<script> 
+		// 		location.href = ('cadastra.php') 
+		// 	  </script>";
     }
 ?>

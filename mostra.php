@@ -1,7 +1,7 @@
 <?php
    session_start();
 
-   $conectar = mysqli_connect("localhost","root","","vitrine_php");
+   $conectar = mysqli_connect("localhost","root","","vitrine");
 
     @$pesquisa = $_GET["pesquisa"];
     if($pesquisa == true){?>
@@ -11,8 +11,9 @@
                 <p><a href="index.php">Home </a> > <a href="index.php?marca=<?php echo "$pesquisa";?>"><?php echo "$pesquisa";?></a></p>
             </div>
         <?php       
-                        $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto from produtos
-                                                WHERE marca LIKE '%$pesquisa%'";
+                        $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto, status_prod from produtos
+                                                WHERE marca LIKE '%$pesquisa%'
+                                                AND status_prod = 'N'";
         
                         $reult = mysqli_query($conectar,$slq_consulta);
         
@@ -55,8 +56,8 @@
 
             <div id="funcionalidade">
 <?php       
-                $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto from produtos
-                                            ";
+                $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto, status_prod from produtos
+                                        WHERE status_prod = 'N'    ";
 
                 $reult = mysqli_query($conectar,$slq_consulta);
 
@@ -99,8 +100,9 @@
                     <p><a href="index.php">Home </a> > <a href="index.php?marca=<?php echo "$marca";?>"><?php echo "$marca";?></a></p>
                 </div>
 <?php 
-                $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto from produtos
-                                        WHERE marca = '$marca' ";
+                $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto, status_pro from produtos
+                                        WHERE marca = '$marca' 
+                                        AND status_prod = 'N'";
 
                 $reult = mysqli_query($conectar,$slq_consulta);
 
