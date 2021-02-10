@@ -123,10 +123,12 @@ input:-webkit-autofill{
     float: left;
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
 }
 #carrinho{
+    max-width: 208px;
     width: 100%;
-    height: 100%;
+    height: 80.5%;
     background: transparent;
     float: left;
     position: relative;
@@ -162,7 +164,7 @@ input:-webkit-autofill{
 }
 #login{
     box-sizing: border-box;
-    height: 100px;
+    height: 80.5%;
     width: 100px;
     max-width: 100px;
     min-width: 100px;
@@ -176,19 +178,21 @@ input:-webkit-autofill{
     border: none;
     cursor: pointer;
     width: 100px;
-    height: 100px;
+    height: 90%;
+    margin-top: 15px;
+    position:absolute;
 }
 #login {
     cursor: pointer;
 }
-#login:hover{
-    border: solid 1px rgb(224, 221, 221, 1);
-    border-bottom: none;
-    border-right: none;
+#login button:hover{
+    color: rgb(88, 88, 88);
 }
 #dados1{
     position: relative;
+    float: right;
     margin-left: -100px;
+    margin-top: 97px;
     width: 200px;
     z-index: 1;
     background:white;
@@ -223,7 +227,19 @@ input:-webkit-autofill{
    font-family: Arial, Helvetica, sans-serif;
    font-size: 15px;
 }
-
+/* Boas vindas*/
+#boasVindas{
+    width: 50%;
+    border: solid 1px;
+    height: 15%;
+    position: relative;
+    float: left;
+    margin-top: 80px;
+    margin-left: -310px;
+    z-index: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /* Formata a Div conteudo */
 #conteudo{
     width: 100%;
