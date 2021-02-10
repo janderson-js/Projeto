@@ -1,7 +1,7 @@
 <?php
    session_start();
 
-   $conectar = mysqli_connect("localhost","root","","vitrine");
+   $conectar = mysqli_connect("localhost","root","","php_vitrine");
 
     @$pesquisa = $_GET["pesquisa"];
     if($pesquisa == true){?>

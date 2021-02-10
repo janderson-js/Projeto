@@ -53,7 +53,7 @@
                     <li><a href="index.php?marca=<?php echo false;?>"> Mostrar Todos</a></li>
                     <?php
                     
-                    $conectar = mysqli_connect("localhost","root","","vitrine_php");
+                    $conectar = mysqli_connect("localhost","root","","php_vitrine");
 
                     $sql_qtd = "SELECT  COUNT( marca)
                                                 FROM produtos

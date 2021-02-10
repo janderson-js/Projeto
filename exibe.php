@@ -46,7 +46,7 @@
             <div id="funcionalidade2">
                 <div id="exibe">
                     <?php
-                        $conectar = mysqli_connect("localhost","root","","vitrine_php");
+                        $conectar = mysqli_connect("localhost","root","","php_vitrine");
                         $cod = $_GET["cod"];
                         $slq_consulta = "SELECT * from produtos
                                 WHERE cod_prod = '$cod'";
@@ -56,19 +56,19 @@
                         $dados_exibe = mysqli_fetch_row($reult);
                     ?>
                     <div id="imagem">
-                        <img src="<?php echo "$dados_exibe[5]"; ?>" alt="Produto">
+                        <img src="<?php echo "$dados_exibe[6]"; ?>" alt="Produto">
                     </div>
                     <a href="index.php"><button id="exibe_btn_volta"><span>Voltar</span></button></a>
                     <div id="informes">
                         <div id="texto">
                             <ul>
-                                <li><?php echo "$dados_exibe[1]"." $dados_exibe[2]";?></li>
-                                <li>de:  <span>  <?php echo number_format($dados_exibe[3], 2, ',', '.');?>$ </span> </li>
-                                <?php  $preco = ($dados_exibe[3] - (5/100 * $dados_exibe[3]))?>
+                                <li><?php echo "$dados_exibe[2]"." $dados_exibe[3]";?></li>
+                                <li>de:  <span>  <?php echo number_format($dados_exibe[4], 2, ',', '.');?>$ </span> </li>
+                                <?php  $preco = ($dados_exibe[4] - (5/100 * $dados_exibe[4]))?>
                                 <li>Por: <span><?php echo number_format($preco, 2, ',', '.');?>$ </span> </li>
                                 <?php  $cartao = $preco /12?>
                                 <li> ou <span> 12x </span> de <span> <?php echo number_format($cartao, 2, ',', '.');?>$</span> sem juros</li>
-                                <?php  $preco2 = ($dados_exibe[3] - (10/100 * $dados_exibe[3]))?>
+                                <?php  $preco2 = ($dados_exibe[4] - (10/100 * $dados_exibe[4]))?>
                                 <li> à vista no boleto: <span><?php echo number_format($preco2, 2, ',', '.');?>$</span> </li>
                             </ul>
                         </div>
@@ -76,7 +76,7 @@
                     <div id="descricao">
                         <div id="texto_descricao" style='text-align:center'>
                             <h3>Descrição</h3>
-                            <p><?php echo "$dados_exibe[4]";?></p>
+                            <p><?php echo "$dados_exibe[5]";?></p>
                         </div>
                     </div>
                 </div>

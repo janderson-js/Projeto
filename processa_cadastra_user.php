@@ -18,7 +18,7 @@
     $complemento = $_POST["complemento"];
 
 
-    $conecta = mysqli_connect("localhost","root","","vitrine");
+    $conecta = mysqli_connect("localhost","root","","php_vitrine");
     
     $sql_cadastra_user = "INSERT INTO usuarios (`cod_user`,`nome`,`sobrenome`) VALUES (NULL,'$nome','$sobrenome')";
 
@@ -58,8 +58,8 @@
                  alert ('ocorreu um erro no servidor. Tente de novo') 
              </script>";
 
-        echo "<script> 
-                 location.href = ('cadastro_user.php') 
-             </script>";	
+        // echo "<script> 
+        //          location.href = ('cadastro_user.php') 
+        //      </script>";	
     }	  
 ?>
