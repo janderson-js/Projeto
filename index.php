@@ -55,13 +55,13 @@
                     
                     $conectar = mysqli_connect("localhost","root","","php_vitrine");
 
-                    $sql_qtd = "SELECT  COUNT( marca)
+                    $sql_qtd = "SELECT  COUNT(marca)
                                                 FROM produtos
                                                 GROUP BY marca
                                                 HAVING (COUNT(*) > 0)
                                                 ";
 
-                    $sql_consulta_marca = "SELECT marca, COUNT(marca)
+                    $sql_consulta_marca = "SELECT cod_prod, marca, COUNT(marca)
                                 FROM produtos
                                 GROUP BY marca
                                 HAVING (COUNT(*) > 0)
@@ -74,7 +74,7 @@
                     while($consulta = mysqli_fetch_row($result_qtd)){
                         $consulta_marca = mysqli_fetch_row($resultado_marca);
                     ?>
-                        <li><a href="index.php?marca=<?php echo "$consulta_marca[0]";?>"><?php echo "$consulta_marca[0]"."-($consulta[0])"; ?></a></li>
+                        <li><a href="index.php?marca=<?php echo "$consulta_marca[1]";?>"><?php echo "$consulta_marca[1]"."-($consulta[0])"; ?></a></li>
                     <?php
                     }
                     ?>
