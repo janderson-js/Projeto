@@ -14,7 +14,7 @@
 
         echo "<p>Bem-Vindo - $dados[1] $dados[2]</p>";
     }else{
-        echo "Faça o login ou Cadastre-se ";
-    }
+        echo '<a href="login.php"><strong>Login</strong></a> | <a href="cadastro_user.php"><strong>Cadastrar-se</strong></a>';
+  }
 
 ?>
