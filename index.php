@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -35,14 +38,11 @@
                 <div id="login">
                     <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>
                     <div id="dados1" class="dados">
-                        <ul>
-                            <li><a href="login.php">Login</a></li>
-                            <li><a href="cadastro_user.php">Cadastrar</a></li>
-                        </ul>
+                        <?php include "menu.php";?>
                     </div>
                 </div>
                 <div id="boasVindas">
-                        dasd
+                        <?php include "boas_vindas.php";?>
                 </div>
             </div>
         </div>

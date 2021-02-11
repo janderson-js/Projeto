@@ -2,7 +2,7 @@
 	session_start();
 
 	/* conexÃ£o com o banco de dados */
-	$conecta = mysqli_connect ("localhost", "root", "", "vitrine");
+	$conecta = mysqli_connect ("localhost", "root", "", "php_vitrine");
 	
 	$login = $_POST["login"];
 	$senha = $_POST["senha"];	
