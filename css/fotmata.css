@@ -18,22 +18,6 @@ body{
     max-width: 70%;
     min-height: 800px;
 }
-#navegacao{
-    width: 100%;
-    height: 30px;
-    box-sizing: border-box;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#navegacao a{
-    text-decoration: none;
-}
-#navegacao a:hover{
-    color: red;
-    text-decoration: underline;
-    transition: 1s;
-}
-
 /* Formata a div TOP*/
 #top{
     width: 100%;
@@ -57,17 +41,20 @@ body{
     padding:10px;
     font-size: 45px; 
 }
-#logo h1 ,p{
+.texto_logo{
     color:#fffc4f;
     text-decoration: none;
     text-align: center;
     font-weight: bolder;
 }
-#logo p{
+.texto_logo_p{
     float: left;
     margin-top: -8%;
-    margin-left: 46% ;
+    margin-left: 45% ;
     font-size: 45px; 
+    padding: 5px;
+    color:#fffc4f;
+    font-weight: bolder;
 }
 #pesquisar{
     height: 100px;
@@ -150,8 +137,15 @@ input:-webkit-autofill{
     flex-direction: row;
 }
 #carrinho a{
-    color:#fffc4f;
+    color: #fffc4f;
     text-decoration: none;
+}
+#texto_carro p{
+    
+}
+#carrinho a:hover{
+    color: white;
+    text-decoration: underline;
 }
 #carro{
     margin-top: 15px;
@@ -160,20 +154,18 @@ input:-webkit-autofill{
 #carro i{
     font-size: 40px;
     color: #fffc4f;
+    margin-right: 5px;
 }
 #texto_carro{
     margin: 25px;
     float: left;
     margin-left: 0;
+    color: #fffc4f;
 }
-#texto_carro a:hover{
-    text-decoration: underline;
-    color: white;
-}
+
 #carrinho p:nth-child(2){
     font-size: 13px;
     text-align: end;
-    color: #fffc4f;
 }
 #login{
     box-sizing: border-box;
@@ -207,8 +199,8 @@ input:-webkit-autofill{
 #dados1{
     position: relative;
     float: right;
-    margin-left: -100px;
-    margin-top: 97px;
+    margin-left: -101px;
+    margin-top: 100px;
     width: 200px;
     z-index: 1;
     background:white;
@@ -220,7 +212,7 @@ input:-webkit-autofill{
 #dados1 ul li {
     border-bottom: solid 1px rgb(138, 138, 138,0.3);
 }
-#dados1 ul li:nth-last-child(1){
+#dados1 ul  li :nth-last-child(1){
     border-bottom: none;
 }
 .dados{
@@ -237,11 +229,14 @@ input:-webkit-autofill{
     cursor: pointer;
     text-decoration: underline;
 }
-#dados1 ul li a{
-   text-decoration: none;
+#dados1 ul  li {
+   
    color: rgb(138, 138, 138);
    font-family: Arial, Helvetica, sans-serif;
    font-size: 15px;
+}
+#dados1 a{
+    text-decoration: none;
 }
 /* Boas vindas*/
 #boasVindas{

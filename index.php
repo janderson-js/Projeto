@@ -15,8 +15,8 @@
         <div id="top">
             <a href="index.php">
                 <div id="logo">
-                    <h1>PHP</h1>
-                    <p>Vitrine</p>
+                    <h1 class="texto_logo">PHP</h1>
+                    <p class="texto_logo_p">Vitrine</p>
                 </div>
             </a>
             <div id="pesquisar">

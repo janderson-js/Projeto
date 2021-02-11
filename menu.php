@@ -2,13 +2,13 @@
 
     if(isset($_SESSION["usuarios_cod_user"])){?>
         <ul>
-            <li><a href="meus_dados.php">Meus Dados</a></li>
-            <li><a href="logout.php">Sair</a></li>
+            <a href="meus_dados.php"><li>Meus Dados</li></a>
+            <a href="logout.php"><li>Sair</li></a>
         </ul>
 <?php    }else{?>
             <ul>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="cadastro_user.php">Cadastrar</a></li>
+                <a href="login.php"><li>Login</li></a>
+                <a href="cadastro_user.php"><li>Cadastrar</li></a>
             </ul>
 <?php        
     }

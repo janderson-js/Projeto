@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -9,10 +12,11 @@
         <script defer src="js/teste.js"></script>
     </head>
     <body>
-    <div id="top">
+        <div id="top">
             <a href="index.php">
                 <div id="logo">
-                    <img src="img/PHP vitrine Logotipo.png" alt="logo" id="logo_top" width="100%" height="100%">
+                    <h1 class="texto_logo">PHP</h1>
+                    <p class="texto_logo_p">Vitrine</p>
                 </div>
             </a>
             <div id="pesquisar">
@@ -27,18 +31,20 @@
             </div>
             <div id="conteiner_interacao">
                 <div id="carrinho">
-                    <a href="#">
-                        <div id="carro"><i class="fas fa-shopping-cart"></i></div>
-                        <div id="texto_carro"><span>ver carrinho</span></div>
-                    </a>
+                    <div id="carro"><i class="fas fa-shopping-cart"></i></div>
+                        <div id="texto_carro">
+                            <a href="#"><p><span><strong>ver carrinho</strong></span></p></a>
+                            <p><span><?php include "status_itens_carrinho.php";?></span></p>
+                        </div>
                 </div>
                 <div id="login">
                     <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>
                     <div id="dados1" class="dados">
-                    <ul>
-                        <li><a href="#">Meus dados</a></li>
-                    </ul>
+                        <?php include "menu.php";?>
+                    </div>
                 </div>
+                <div id="boasVindas">
+                        <?php include "boas_vindas.php";?>
                 </div>
             </div>
         </div>
