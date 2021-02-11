@@ -1,6 +1,9 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
@@ -9,7 +12,7 @@
         <script defer src="js/teste.js"></script>
     </head>
     <body>
-    <div id="top">
+        <div id="top">
             <a href="index.php">
                 <div id="logo">
                     <img src="img/PHP vitrine Logotipo.png" alt="logo" id="logo_top" width="100%" height="100%">
@@ -35,10 +38,11 @@
                 <div id="login">
                     <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>
                     <div id="dados1" class="dados">
-                    <ul>
-                        <li><a href="#">Meus dados</a></li>
-                    </ul>
+                        <?php include "menu.php";?>
+                    </div>
                 </div>
+                <div id="boasVindas">
+                        <?php include "boas_vindas.php";?>
                 </div>
             </div>
         </div>
