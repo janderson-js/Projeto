@@ -33,7 +33,7 @@
                 <div id="carrinho">
                     <div id="carro"><i class="fas fa-shopping-cart"></i></div>
                         <div id="texto_carro">
-                            <a href="#"><p><span><strong>ver carrinho</strong></span></p></a>
+                            <a href="valida_login.php"><p><span><strong>ver carrinho</strong></span></p></a>
                             <p><span><?php include "status_itens_carrinho.php";?></span></p>
                         </div>
                 </div>
@@ -55,29 +55,46 @@
                         <h1 class="titulo_carrinho">Produto Adicionado com Sucesso !!!</h1>
                     </div>
                     <div id="produto">
+
+                        <?php
+                            $conecta = mysqli_connect ("localhost", "root", "", "php_vitrine");
+
+                            $cod = $_GET["cod"];
+
+                            $slq_consulta_produto = "SELECT * from produtos
+                                        WHERE cod_prod = '$cod'
+                                        AND  status_prod = 'F'
+                                    ";
+                            $resultado_consulta_produto = mysqli_query($conecta,$slq_consulta_produto);
+
+                            $dados_produto = mysqli_fetch_row($resultado_consulta_produto);
+                        ?>
+
                         <div id="img_produto">
-                            <img src="" alt="Produto">
+                            <img src="<?php echo "$dados_produto[7]";?>" alt="Produto">
                         </div>
                         <div id="informacao_produto">
-                            <h1>Nome do produto</h1>
+                            <h1><?php echo "$dados_produto[3] $dados_produto[4]";?></h1>
                             <div id="div_texto">
-                               
+                                <p><?php echo "$dados_produto[6]";?></p>
                             </div>
                         </div>
                         <div id="valor_produto">
                             <ul>
-                                <li>dasda</li>
-                                <li>asdas</li>
-                                <li>asdas</li>
-                                <li>asda</li>
-                                <li>sasdasd</li>
+                                <li>de:  <span>  <?php echo number_format($dados_produto[5], 2, ',', '.');?>$ </span> </li>
+                                <?php  $preco = ($dados_produto[5] - (5/100 * $dados_produto[5]))?>
+                                <li>Por: <span><?php echo number_format($preco, 2, ',', '.');?>$ </span> </li>
+                                <?php  $cartao = $preco /12?>
+                                <li> ou <span> 12x </span> de <span> <?php echo number_format($cartao, 2, ',', '.');?>$</span> sem juros</li>
+                                <?php  $preco2 = ($dados_produto[5] - (10/100 * $dados_produto[5]))?>
+                                <li> à vista no boleto: <span><?php echo number_format($preco2, 2, ',', '.');?>$</span> </li>
                             </ul>
                         </div>
                     </div>
                     
                     <div id="acao_produto">
                         <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Continuar Comprando</button></a>
-                        <a href=""><button>Ir para o carrinho <i class="fas fa-shopping-cart"></i></button></a>
+                        <a href="carrinho_compra.php"><button>Ir para o carrinho <i class="fas fa-shopping-cart"></i></button></a>
                     </div>
                 </div>
             </div>

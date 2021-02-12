@@ -33,7 +33,7 @@
                 <div id="carrinho">
                     <div id="carro"><i class="fas fa-shopping-cart"></i></div>
                         <div id="texto_carro">
-                            <a href="#"><p><span><strong>ver carrinho</strong></span></p></a>
+                            <a href="valida_login.php"><p><span><strong>ver carrinho</strong></span></p></a>
                             <p><span><?php include "status_itens_carrinho.php";?></span></p>
                         </div>
                 </div>
