@@ -61,8 +61,7 @@
                         <div id="informacao_produto">
                             <h1>Nome do produto</h1>
                             <div id="div_texto">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odio eligendi expedita? Adipisci perferendis fuga molestiae alias consectetur odio, vitae cumque error! Ipsa unde quis aliquam animi porro facere voluptatem.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, iure a nesciunt saepe perspiciatis itaque voluptates id, atque eaque minus harum unde, ratione numquam? Nam recusandae est illo mollitia! Placeat.
+                               
                             </div>
                         </div>
                         <div id="valor_produto">
@@ -74,6 +73,11 @@
                                 <li>sasdasd</li>
                             </ul>
                         </div>
+                    </div>
+                    
+                    <div id="acao_produto">
+                        <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Continuar Comprando</button></a>
+                        <a href=""><button>Ir para o carrinho <i class="fas fa-shopping-cart"></i></button></a>
                     </div>
                 </div>
             </div>

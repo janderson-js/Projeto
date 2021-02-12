@@ -10,7 +10,8 @@
         <?php       
                         $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto, status_prod from produtos
                                                 WHERE marca LIKE '%$pesquisa%'
-                                                AND status_prod = 'N'";
+                                                AND status_prod = 'N'
+                                                '";
         
                         $reult = mysqli_query($conectar,$slq_consulta);
         
@@ -39,7 +40,7 @@
                                                     <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-plus"></i>detalhes</button></a>
                                             </div>
                                             <div id="botao_comprar">
-                                                    <a href="adiciona.carrinho_compra.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
+                                                    <a href="processa_adc_carrinho_compra.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
                                             </div>
                                         </div>
                                     </div>
@@ -54,7 +55,8 @@
             <div id="funcionalidade">
 <?php       
                 $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto, status_prod from produtos
-                                        WHERE status_prod = 'N'    ";
+                                        WHERE status_prod = 'N'
+                                    ";
 
                 $reult = mysqli_query($conectar,$slq_consulta);
 
@@ -83,7 +85,7 @@
                                         <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-plus"></i>detalhes</button></a>
                                    </div>
                                    <div id="botao_comprar">
-                                        <a href="adiciona.carrinho_compra.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
+                                        <a href="processa_adc_carrinho_compra.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
                                    </div>
                                </div>
                             </div>
@@ -96,7 +98,8 @@
 <?php 
                 $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto, status_prod from produtos
                                         WHERE marca = '$marca' 
-                                        AND status_prod = 'N'";
+                                        AND status_prod = 'N'
+                                        ";
 
                 $reult = mysqli_query($conectar,$slq_consulta);
 
@@ -125,7 +128,7 @@
                                         <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-plus"></i>detalhes</button></a>
                                    </div>
                                    <div id="botao_comprar">
-                                        <a href="adiciona.carrinho_compra.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
+                                        <a href="processa_adc_carrinho_compra.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
                                    </div>
                                </div>
                             </div>
