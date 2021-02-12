@@ -39,7 +39,7 @@
                                                     <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-plus"></i>detalhes</button></a>
                                             </div>
                                             <div id="botao_comprar">
-                                                    <a href="#"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
+                                                    <a href="adiciona.carrinho_compra.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
                                             </div>
                                         </div>
                                     </div>
@@ -83,7 +83,7 @@
                                         <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-plus"></i>detalhes</button></a>
                                    </div>
                                    <div id="botao_comprar">
-                                        <a href="#"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
+                                        <a href="adiciona.carrinho_compra.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
                                    </div>
                                </div>
                             </div>
@@ -125,7 +125,7 @@
                                         <a href="exibe.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-plus"></i>detalhes</button></a>
                                    </div>
                                    <div id="botao_comprar">
-                                        <a href="#"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
+                                        <a href="adiciona.carrinho_compra.php?cod=<?php echo "$dados[0]";?>"><button><i class="fas fa-shopping-cart"></i>comprar</button></a>
                                    </div>
                                </div>
                             </div>

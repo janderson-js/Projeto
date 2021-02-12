@@ -50,36 +50,22 @@
         </div>
         <div id="conteudo">
             <div id="funcionalidade2">
-                <div id="cadastro">
-                    <a href="index.php"><button id="cadastra_btn_volta"><span>Voltar</span></button></a>
-                    <h1 class="titulo">Cadastro de Produtos</h1>
-                    <form method="post" action="processa_cadastra.php" enctype="multipart/form-data">
-                        <table id="tabela">
-                            <tr>
-                                <td>Marca:</td>
-                                <td><input type="text" name="marca" placeholder="Marca"></td>
-                            </tr>
-                            <tr>
-                                <td>Modelo:</td>
-                                <td><input type="text" name="modelo" placeholder="Modelo"></td>
-                            </tr>
-                            <tr>
-                                <td>Preço:</td>
-                                <td><input type="text" name="preco" placeholder="Preço"></td>
-                            </tr>
-                            <tr>
-                                <td>Descrição:</td>
-                                <td><textarea type="text" name="descricao" placeholder="Descricao"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td>Foto:</td>
-                                <td> <p> <input type="file" name="foto" required> </p> </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" align="center"><button type="reset"  value="Limpar campos" class="btn">Limpar</button> <button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Cadastrar</button></td>
-                            </tr>
-                        </table>
-                    </form>
+                <div id="adicionarAoCarrinho">
+                    <div id="div_titulo">
+                        <h1>Produto Adicionado com Sucesso</h1>
+                    </div>
+                    <div id="produto">
+                        <div id="img_produto">
+                            <img src="" alt="Produto">
+                        </div>
+                        <div id="informacao_produto">
+                            <h1>Nome do produto</h1>
+                            <div id="div_texto">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odio eligendi expedita? Adipisci perferendis fuga molestiae alias consectetur odio, vitae cumque error! Ipsa unde quis aliquam animi porro facere voluptatem.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, iure a nesciunt saepe perspiciatis itaque voluptates id, atque eaque minus harum unde, ratione numquam? Nam recusandae est illo mollitia! Placeat.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
