@@ -52,7 +52,7 @@
             <div id="funcionalidade2">
                 <div id="adicionarAoCarrinho">
                     <div id="div_titulo">
-                        <h1>Produto Adicionado com Sucesso</h1>
+                        <h1 class="titulo_carrinho">Produto Adicionado com Sucesso !!!</h1>
                     </div>
                     <div id="produto">
                         <div id="img_produto">
@@ -64,6 +64,15 @@
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odio eligendi expedita? Adipisci perferendis fuga molestiae alias consectetur odio, vitae cumque error! Ipsa unde quis aliquam animi porro facere voluptatem.
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, iure a nesciunt saepe perspiciatis itaque voluptates id, atque eaque minus harum unde, ratione numquam? Nam recusandae est illo mollitia! Placeat.
                             </div>
+                        </div>
+                        <div id="valor_produto">
+                            <ul>
+                                <li>dasda</li>
+                                <li>asdas</li>
+                                <li>asdas</li>
+                                <li>asda</li>
+                                <li>sasdasd</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -764,7 +764,17 @@ input:-webkit-autofill{
     width: 90%;
     min-height: 500px;
     background: white;
+    box-sizing: border-box;
     border: solid 1px rgb(211, 210, 210);
+}
+#div_titulo{
+    box-sizing: border-box;
+}
+.titulo_carrinho{
+    text-align: center;
+    color: green;
+    padding-top: 35px;
+    margin-bottom: auto;
 }
 #produto{
     width: 100%;
@@ -774,6 +784,7 @@ input:-webkit-autofill{
     display: flex;
     flex-wrap: nowrap;
 }
+
 #img_produto{
     min-width: 20%;
     height: 200px;
@@ -787,18 +798,24 @@ input:-webkit-autofill{
 }
 #informacao_produto h1{
     text-decoration: none;
-    left: 0;
-    top: 0;
+    float: left;
+    margin-top: 5px;
+    margin-left: 50px;
+    padding: 0px;
 }
 #div_texto{
     max-width: 450px;
     max-height: 130px;
     border: solid 1px;
     text-align: center;
-    
+    margin-top: 10%;
     text-indent: 5%;
     font-size: 14px;
     margin-left: 5%;
+}
+#valor_produto{
+    border: solid 1px;
+    min-width: 30%;
 }
 /**/
 /**/
