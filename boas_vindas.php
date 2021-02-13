@@ -1,5 +1,6 @@
 <?php
-
+    @session_start();
+    
     if(isset($_SESSION["usuarios_cod_user"])){
         $cod_user = $_SESSION["usuarios_cod_user"];
 
@@ -18,3 +19,4 @@
   }
 
 ?>
+

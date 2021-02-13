@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -94,7 +94,7 @@
                     
                     <div id="acao_produto">
                         <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Continuar Comprando</button></a>
-                        <a href="carrinho_compra.php"><button>Ir para o carrinho <i class="fas fa-shopping-cart"></i></button></a>
+                        <a href="valida_login.php"><button>Ir para o carrinho <i class="fas fa-shopping-cart"></i></button></a>
                     </div>
                 </div>
             </div>
@@ -104,3 +104,5 @@
         </div>
     </body>
 </html>
+
+

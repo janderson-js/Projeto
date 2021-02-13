@@ -1,6 +1,5 @@
 <?php
     session_start();
-
     if(isset($_SESSION["usuarios_cod_user"])){
         
         echo "<script>

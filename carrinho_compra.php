@@ -1,5 +1,4 @@
 <?php
-    session_start();
 
     $conecta = mysqli_connect ("localhost", "root", "", "php_vitrine");
 
@@ -33,6 +32,7 @@
                         <?php  $preco2 = ($dados_produto[5] - (10/100 * $dados_produto[5]))?>
                         <li> à vista no boleto: <span><?php echo number_format($preco2, 2, ',', '.');?>$</span> </li>
                     </ul>
+                    <a href="processa_remover.php?cod<?php echo "$dados_produto[0]";?>"><button>Remover</button></a>
                 </div>
             </div>
 <?php   }

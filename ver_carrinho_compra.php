@@ -30,7 +30,7 @@
                 <div id="carrinho">
                     <div id="carro"><i class="fas fa-shopping-cart"></i></div>
                         <div id="texto_carro">
-                            <a href="#"><p><span><strong>ver carrinho</strong></span></p></a>
+                            <a href="valida_login.php"><p><span><strong>ver carrinho</strong></span></p></a>
                             <p><span><?php include "status_itens_carrinho.php";?></span></p>
                         </div>
                 </div>
@@ -49,12 +49,12 @@
             <div id="funcionalidade2">
                 <div id="adicionarAoCarrinho">
                     <div id="div_titulo">
-                        <h1 class="titulo_carrinho">Produto Adicionado com Sucesso !!!</h1>
+                        <h1 class="titulo_carrinho">Carrinho de Compras</h1>
                     </div>
                     <?php include "carrinho_compra.php"?>
                     <div id="acao_produto">
                         <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Continuar Comprando</button></a>
-                        <a href="carrinho_compra.php"><button>Ir para o carrinho <i class="fas fa-shopping-cart"></i></button></a>
+                        <a href="carrinho_compra.php"><button>Finalizar Compra <i class="fas fa-shopping-cart"></i></button></a>
                     </div>
                 </div>
             </div>
