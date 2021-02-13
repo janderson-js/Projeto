@@ -769,6 +769,24 @@ input:-webkit-autofill{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+#adicionarAoCarrinho h1:nth-child(2){
+    text-align: center;
+    margin-top: 10%;
+    color: red;
+}
+#adicionarAoCarrinho button{
+    border-radius: 10px;
+    border: solid 1px rgb(54, 53, 53);
+    height: 30px;
+    width: 150px;
+    margin-top: 7%;
+    margin-left: 80%;
+    background: #ebebeb;
+    font-weight: bold;
+}
+#adicionarAoCarrinho button:hover{
+    background:#fffc4f;
+}
 #div_titulo{
     box-sizing: border-box;
 }
@@ -853,6 +871,19 @@ input:-webkit-autofill{
 }
 #valor_produto ul li:nth-child(4) span{
     color: rgb(9, 158, 4);
+}
+#valor_produto button{
+    border-radius: 10px;
+    border: solid 1px rgb(54, 53, 53);
+    height: 30px;
+    width: 100px;
+    margin-top: 7%;
+    margin-left: 60%;
+    background: #ebebeb;
+    font-weight: bold;
+}
+#valor_produto button:hover{
+    background:#fffc4f;
 }
 #acao_produto{
     width: 100%;

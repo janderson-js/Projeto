@@ -52,10 +52,6 @@
                         <h1 class="titulo_carrinho">Carrinho de Compras</h1>
                     </div>
                     <?php include "carrinho_compra.php"?>
-                    <div id="acao_produto">
-                        <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Continuar Comprando</button></a>
-                        <a href="carrinho_compra.php"><button>Finalizar Compra <i class="fas fa-shopping-cart"></i></button></a>
-                    </div>
                 </div>
             </div>
         </div>

@@ -10,7 +10,10 @@
             ";
     $resultado_consulta_produto = mysqli_query($conecta,$slq_consulta_produto);
 
-    while($dados_produto = mysqli_fetch_row($resultado_consulta_produto)){?>
+    $linhas = mysqli_num_rows($resultado_consulta_produto);
+
+    if($linhas){
+        while($dados_produto = mysqli_fetch_row($resultado_consulta_produto)){?>
         
             <div id="produto">
                 <div id="img_produto">
@@ -32,8 +35,17 @@
                         <?php  $preco2 = ($dados_produto[5] - (10/100 * $dados_produto[5]))?>
                         <li> à vista no boleto: <span><?php echo number_format($preco2, 2, ',', '.');?>$</span> </li>
                     </ul>
-                    <a href="processa_remover.php?cod<?php echo "$dados_produto[0]";?>"><button>Remover</button></a>
+                    <a href="processa_remove.php?cod=<?php echo "$dados_produto[0]";?>"><button>Remover <i class="fas fa-trash-alt"></i></button></a>
                 </div>
             </div>
-<?php   }
-?>
+<?php   }?>
+            <div id="acao_produto">
+                <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Continuar Comprando</button></a>
+                <a href="carrinho_compra.php"><button>Finalizar Compra <i class="fas fa-shopping-cart"></i></button></a>
+            </div>
+<?php   }else{
+    
+        echo "<h1>Esta Vazio </h1>";
+        echo "<a href='index.php'><button><i class='fas fa-long-arrow-alt-left'></i> Comprar Agora</button></a>";
+
+    }?>
