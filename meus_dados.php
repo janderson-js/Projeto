@@ -51,83 +51,142 @@
         <div id="conteudo">
             <div id="funcionalidade2">
                 <div id="cadastro_user" class="cadastro_tabela">
+                    <?php
+                        $cod_user_dados = $_SESSION["usuarios_cod_user"];
+
+                        $sql_meus_dados_user = "SELECT * FROM usuarios
+                                                    WHERE cod_user = '$cod_user_dados'";
+
+                        $sql_meus_dados_login = "SELECT email, senha FROM logins
+                        WHERE usuarios_cod_user = '$cod_user_dados'";
+
+                        $sql_meus_dados_endereco = "SELECT * FROM endereco
+                        WHERE usuarios_cod_user = '$cod_user_dados'";
+
+                        $sql_meus_dados_telefone = "SELECT * FROM  telefone
+                                                            WHERE usuarios_cod_user = '$cod_user_dados'";
+
+                        $resultado_sql_meus_dados_user = mysqli_query($conecta,$sql_meus_dados_user);
+
+                        $resultado_sql_meus_dados_login = mysqli_query($conecta,$sql_meus_dados_login);
+
+                        $resultado_sql_meus_dados_endereco = mysqli_query($conecta,$sql_meus_dados_endereco);
+
+                        $resultado_sql_meus_dados_telefone = mysqli_query($conecta,$sql_meus_dados_telefone);
+
+                        $dados_user = mysqli_fetch_row($resultado_sql_meus_dados_user);
+
+                        $dados_login = mysqli_fetch_row($resultado_sql_meus_dados_login);
+
+                        $dados_telefone = mysqli_fetch_row($resultado_sql_meus_dados_telefone);
+
+                        $dados_endereco = mysqli_fetch_row($resultado_sql_meus_dados_endereco);
+
+
+
+                    ?>
                     <a href="index.php"><button id="cadastra_btn_volta"><span>Voltar</span></button></a>
                     <h1>Cadastro de Usuarios</h1>
-                    <form method="post" action="processa_cadastra_user.php" enctype="multipart/form-data">
-                        <table id="tabela_cadastro_user" class="tabela">
-                            <tr>
-                                <td colspan="2" align="center">Dados:</td>
-                            </tr>
-                            <tr>
-                                <td>Nome:</td>
-                                <td>Sobrenome:</td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" name="nome" placeholder="Ex: José" require></td>
-                                <td><input type="text" name="sobrenome" placeholder="Ex: Souza da Silva" require></td>
-                            </tr>
-                            <tr>
-                                <td>email:</td>
-                            </tr>
-                            <tr>
-                                <td><input type="email" name="email" autocomplete="off"   placeholder="Ex:josésouza@gmail.com" require></td>
-                            </tr>
-                            <tr>
-                                <td>Senha:</td> 
-                            </tr>
-                            <tr>
-                                <td><input type="password" name="senha" placeholder="*********" require></td>
-                            </tr>
-                            <tr>
-                                <td>Telefone:</td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" name="telefone" placeholder="Ex: 61 9 0000-0000" require></td>
-                            </tr>
-                            <tr>
-                                <td>Telefone de contato:</td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" name="telefoneContato" placeholder="Ex: 61 9 0000-0000" require></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" align="center">Endereço:</td>
-                            </tr>
-                            <tr>
-                                <td>Cep:</td>
-                                <td>Cidade:</td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" name="cep" placeholder="Ex: 72621-411" require></td>
-                                <td><input type="text" name="cidade" placeholder="Ex: Brasilia" require></td>
-                            </tr>
-                            <tr>
-                                <td>Bairro:</td>
-                                <td>Quadra/rua:</td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" name="bairro" placeholder="Ex: Recanto das Emas" require></td>
-                                <td><input type="text" name="quadraRua" placeholder="Ex:Qd 300 / Rua 2" require></td>
-                            </tr>
-                            <tr>
-                                
-                            </tr>
-                            <tr>
-                                
-                            </tr>
-                            <tr>
-                                <td>Numero:</td>
-                                <td>Complemento:</td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" name="numero" placeholder="Ex: casa 2" require></td>
-                                <td><input type="text" name="complemento" placeholder="Ex: proximo a escola" ></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" align="center"><a href="processa_altera_dados.php"><button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Alterar</button></a></td>
-                            </tr>
-                        </table>
-                    </form>
+                    <?php 
+                        if($dados_user[3] <> "administrador"){?>
+                            <form method="post" action="processa_cadastra_user.php" enctype="multipart/form-data">
+                                <table id="tabela_cadastro_user" class="tabela">
+                                    <tr>
+                                        <td colspan="2" align="center">Dados:</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nome:</td>
+                                        <td>Sobrenome:</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="nome" value="<?php echo "$dados_user[1]";?>"></td>
+                                        <td><input type="text" name="sobrenome" value="<?php echo "$dados_user[2]";?>"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>email:</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="email" name="email" autocomplete="off"  value="<?php echo "$dados_login[0]";?>"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Senha:</td> 
+                                    </tr>
+                                    <tr>
+                                        <td><input type="password" name="senha" value="<?php echo "$dados_login[1]";?>"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telefone:</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="telefone" value="<?php echo "$dados_telefone[2]";?>"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telefone de contato:</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="telefoneContato" value="<?php echo "$dados_telefone[3]";?>"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">Endereço:</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cep:</td>
+                                        <td>Cidade:</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="cep" value="<?php echo "$dados_endereco[2]";?>"></td>
+                                        <td><input type="text" name="cidade" value="<?php echo "$dados_endereco[3]";?>"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bairro:</td>
+                                        <td>Quadra/rua:</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="bairro" value="<?php echo "$dados_endereco[4]";?>"></td>
+                                        <td><input type="text" name="quadraRua" value="<?php echo "$dados_endereco[5]";?>"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Numero:</td>
+                                        <td>Complemento:</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="numero" value="<?php echo "$dados_endereco[6]";?>"></td>
+                                        <td><input type="text" name="complemento" value="<?php echo "$dados_endereco[7]";?>"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center"><a href="processa_altera_dados.php"><button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Alterar</button></a></td>
+                                    </tr>
+                            </table>
+                        </form>
+                    <?php }else{?>
+                        <form method="post" action="processa_cadastra_user.php" enctype="multipart/form-data">
+                                <table id="tabela_cadastro_user" class="tabela">
+                                    <tr>
+                                        <td colspan="2" align="center">Dados:</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nome:</td>
+                                        <td>Sobrenome:</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="nome" value="<?php echo "$dados_user[1]";?>" disabled></td>
+                                        <td><input type="text" name="sobrenome" value="<?php echo "$dados_user[2]";?>" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td>email:</td>
+                                        <td>Senha:</td> 
+                                    </tr>
+                                    <tr>
+                                        <td><input type="email" name="email" autocomplete="off"  value="<?php echo "$dados_login[0]";?>" disabled></td>
+                                        <td><input type="password" name="senha" value="<?php echo "$dados_login[1]";?>"></td>
+                                    </tr>      
+                                    <tr>
+                                        <td colspan="2" align="center"><a href="processa_altera_dados.php"><button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Alterar</button></a></td>
+                                    </tr>
+                            </table>
+                        </form>
+                   <?php }
+                    ?>
                 </div>
             </div>
         </div>
