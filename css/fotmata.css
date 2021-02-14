@@ -586,6 +586,9 @@ input:-webkit-autofill{
     padding: 20px;
     width: 400px;
 }
+#cadastro_user table button{
+    margin-top: 30px;
+}
 /* Login user*/
 #login_user{
     width: 400px;
@@ -740,6 +743,38 @@ input:-webkit-autofill{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+#div_botao_descricao{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#div_botao_descricao button{
+    border-radius: 10px;
+    border: solid 1px rgb(54, 53, 53);
+    height: 30px;
+    width: 150px;
+    margin-top: 7%;
+    margin-right: 50px;
+    background: #ebebeb;
+    font-weight: bold;
+}
+#div_botao_descricao a:nth-child(1) button{
+    background: green;
+    color: white;
+}
+#div_botao_descricao a:nth-child(1) button:hover{
+    background: rgb(3, 105, 3);
+}
+#div_botao_descricao a:nth-child(2) button{
+    background: rgb(180, 20, 9);
+    color: white;
+}
+#div_botao_descricao a:nth-child(2) button:hover{
+    background: rgb(141, 15, 5);
 }
 #texto_descricao{
     width: 93%;

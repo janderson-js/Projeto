@@ -83,6 +83,10 @@
                         <div id="texto_descricao" style='text-align:center'>
                             <h3>Descrição</h3>
                             <p><?php echo "$dados_exibe[6]";?></p>
+                            <div id="div_botao_descricao">
+                                <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Voltar ao inicio</i></button></a>
+                                <a href="processa_adc_carrinho_compra.php?cod=<?php echo "$dados_exibe[0]";?>"><button>Comprar <i class="fas fa-shopping-cart"></i></button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
