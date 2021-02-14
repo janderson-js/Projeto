@@ -86,7 +86,7 @@
                     <h1>Cadastro de Usuarios</h1>
                     <?php 
                         if($dados_user[3] != "administrador"){?>
-                            <form method="post" action="processa_cadastra_user.php" enctype="multipart/form-data">
+                            <form method="post" action="processa_altera_dados.php" enctype="multipart/form-data">
                                 <table id="tabela_cadastro_user" class="tabela">
                                     <tr>
                                         <td colspan="2" align="center">Dados:</td>

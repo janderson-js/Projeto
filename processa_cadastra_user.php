@@ -40,7 +40,7 @@
          $sql_cadastra_telefone_user = "INSERT INTO telefone (`cod_tele`,`usuarios_cod_user`,`telefone`,`tele_contato`)
           VALUES (NULL,'$cod_user', '$telefone','$telefoneContato')";
 
-         $sql_cadastra_endereco_user = "INSERT INTO endereco (`cod_end`,`usuarios_cod_user`,`cep`,`cidade`,`bairro`,`quadra/rua`,`numero_casa`,`complemento`) 
+         $sql_cadastra_endereco_user = "INSERT INTO endereco (`cod_end`,`usuarios_cod_user`,`cep`,`cidade`,`bairro`,`quadraRua`,`numero_casa`,`complemento`) 
           VALUES (NULL,'$cod_user','$cep','$cidade','$bairro','$quadraRua','$numero','$complemento')";	
 
           $resul_cadastra_telefone = mysqli_query($conecta, $sql_cadastra_telefone_user);

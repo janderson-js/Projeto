@@ -154,7 +154,7 @@
                                     </tr>
                             </table>
                     <?php }else{?>
-                            <form method="post" action="processa_cadastra_user.php" enctype="multipart/form-data">
+                            
                                     <table id="tabela_cadastro_user" class="tabela">
                                         <tr>
                                             <td colspan="2" align="center">Dados:</td>
@@ -179,7 +179,7 @@
                                             <td colspan="2" align="center"><a href="altera_meus_dados.php"><button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Alterar</button></a></td>
                                         </tr>
                                 </table>
-                            </form>
+                            
                    <?php }
                     ?>
                 </div>
