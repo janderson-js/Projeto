@@ -86,6 +86,7 @@
                     <h1>Cadastro de Usuarios</h1>
                     <?php 
                         if($dados_user[3] != "administrador"){?>
+                            <form method="post" action="processa_cadastra_user.php" enctype="multipart/form-data">
                                 <table id="tabela_cadastro_user" class="tabela">
                                     <tr>
                                         <td colspan="2" align="center">Dados:</td>
@@ -95,32 +96,32 @@
                                         <td>Sobrenome:</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="nome" value="<?php echo "$dados_user[1]";?>" disabled></td>
-                                        <td><input type="text" name="sobrenome" value="<?php echo "$dados_user[2]";?>" disabled></td>
+                                        <td><input type="text" name="nome" value="<?php echo "$dados_user[1]";?>"></td>
+                                        <td><input type="text" name="sobrenome" value="<?php echo "$dados_user[2]";?>"></td>
                                     </tr>
                                     <tr>
                                         <td>email:</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="email" name="email" autocomplete="off"  value="<?php echo "$dados_login[0]";?>" disabled></td>
+                                        <td><input type="email" name="email" autocomplete="off"  value="<?php echo "$dados_login[0]";?>"></td>
                                     </tr>
                                     <tr>
                                         <td>Senha:</td> 
                                     </tr>
                                     <tr>
-                                        <td><input type="password" name="senha" value="<?php echo "$dados_login[1]";?>" disabled></td>
+                                        <td><input type="password" name="senha" value="<?php echo "$dados_login[1]";?>"></td>
                                     </tr>
                                     <tr>
                                         <td>Telefone:</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="telefone" value="<?php echo "$dados_telefone[2]";?>" disabled></td>
+                                        <td><input type="text" name="telefone" value="<?php echo "$dados_telefone[2]";?>"></td>
                                     </tr>
                                     <tr>
                                         <td>Telefone de contato:</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="telefoneContato" value="<?php echo "$dados_telefone[3]";?>" disabled></td>
+                                        <td><input type="text" name="telefoneContato" value="<?php echo "$dados_telefone[3]";?>"></td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" align="center">Endereço:</td>
@@ -130,29 +131,30 @@
                                         <td>Cidade:</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="cep" value="<?php echo "$dados_endereco[2]";?>" disabled></td>
-                                        <td><input type="text" name="cidade" value="<?php echo "$dados_endereco[3]";?>" disabled></td>
+                                        <td><input type="text" name="cep" value="<?php echo "$dados_endereco[2]";?>"></td>
+                                        <td><input type="text" name="cidade" value="<?php echo "$dados_endereco[3]";?>"></td>
                                     </tr>
                                     <tr>
                                         <td>Bairro:</td>
                                         <td>Quadra/rua:</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="bairro" value="<?php echo "$dados_endereco[4]";?>" disabled></td>
-                                        <td><input type="text" name="quadraRua" value="<?php echo "$dados_endereco[5]";?>" disabled></td>
+                                        <td><input type="text" name="bairro" value="<?php echo "$dados_endereco[4]";?>"></td>
+                                        <td><input type="text" name="quadraRua" value="<?php echo "$dados_endereco[5]";?>"></td>
                                     </tr>
                                     <tr>
                                         <td>Numero:</td>
                                         <td>Complemento:</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="numero" value="<?php echo "$dados_endereco[6]";?>" disabled></td>
-                                        <td><input type="text" name="complemento" value="<?php echo "$dados_endereco[7]";?>" disabled></td>
+                                        <td><input type="text" name="numero" value="<?php echo "$dados_endereco[6]";?>"></td>
+                                        <td><input type="text" name="complemento" value="<?php echo "$dados_endereco[7]";?>"></td>
                                     </tr>
                                     <tr>
-                                            <td colspan="2" align="center"><a href="altera_meus_dados.php"><button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Alterar</button></a></td>
+                                        <td colspan="2" align="center"><a href="processa_altera_dados.php"><button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Alterar</button></a></td>
                                     </tr>
                             </table>
+                        </form>
                     <?php }else{?>
                             <form method="post" action="processa_cadastra_user.php" enctype="multipart/form-data">
                                     <table id="tabela_cadastro_user" class="tabela">
@@ -176,7 +178,7 @@
                                             <td><input type="password" name="senha" value="<?php echo "$dados_login[1]";?>"></td>
                                         </tr>      
                                         <tr>
-                                            <td colspan="2" align="center"><a href="altera_meus_dados.php"><button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Alterar</button></a></td>
+                                            <td colspan="2" align="center"><a href="processa_altera_dados.php"><button type="submit" value="Cadastrar" id="btn_cadastra" class="btn">Alterar</button></a></td>
                                         </tr>
                                 </table>
                             </form>
