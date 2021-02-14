@@ -10,11 +10,20 @@
             ";
     $resultado_consulta_produto = mysqli_query($conecta,$slq_consulta_produto);
 
+    
+
     $linhas = mysqli_num_rows($resultado_consulta_produto);
 
+    $valor_prod = 0;$valor_boleto = 0;
+
     if($linhas){
-        while($dados_produto = mysqli_fetch_row($resultado_consulta_produto)){?>
-        
+
+        while($dados_produto = mysqli_fetch_row($resultado_consulta_produto)){
+
+            $valor_prod = $valor_prod + $dados_produto[5];
+            $valor_boleto = $valor_boleto + $dados_produto[5];
+
+            ?>
             <div id="produto">
                 <div id="img_produto">
                     <img src="<?php echo "$dados_produto[7]";?>" alt="Produto">
@@ -38,7 +47,84 @@
                     <a href="processa_remove.php?cod=<?php echo "$dados_produto[0]";?>"><button>Remover <i class="fas fa-trash-alt"></i></button></a>
                 </div>
             </div>
-<?php   }?>
+<?php  }?> 
+            <div id="dados_endereco" class="dados_endereco">
+            <?php
+                        $sql_meus_dados_user = "SELECT * FROM usuarios
+                                                    WHERE cod_user = '$cod'";
+
+                        $sql_meus_dados_login = "SELECT email, senha FROM logins
+                        WHERE usuarios_cod_user = '$cod'";
+
+                        $sql_meus_dados_endereco = "SELECT * FROM endereco
+                        WHERE usuarios_cod_user = '$cod'";
+
+                        $sql_meus_dados_telefone = "SELECT * FROM  telefone
+                                                            WHERE usuarios_cod_user = '$cod'";
+
+                        $resultado_sql_meus_dados_user = mysqli_query($conecta,$sql_meus_dados_user);
+
+                        $resultado_sql_meus_dados_login = mysqli_query($conecta,$sql_meus_dados_login);
+
+                        $resultado_sql_meus_dados_endereco = mysqli_query($conecta,$sql_meus_dados_endereco);
+
+                        $resultado_sql_meus_dados_telefone = mysqli_query($conecta,$sql_meus_dados_telefone);
+
+                        $dados_user = mysqli_fetch_row($resultado_sql_meus_dados_user);
+
+                        $dados_login = mysqli_fetch_row($resultado_sql_meus_dados_login);
+
+                        $dados_telefone = mysqli_fetch_row($resultado_sql_meus_dados_telefone);
+
+                        $dados_endereco = mysqli_fetch_row($resultado_sql_meus_dados_endereco);
+
+
+                    ?>
+                    <h3>Dados</h3>
+                    <div id="div_informacoes">
+                        <table class="dados_carrinho">
+                            <tr>
+                                <td>Nome: </td>
+                                <td><?php echo " $dados_user[1] $dados_user[2]"; ?></td>
+                            </tr>
+                            <tr>
+                                <td>e-mail: </td>
+                                <td><?php echo "$dados_login[0]"; ?></td>
+                            </tr>
+                        </table>
+                        <table class="dados_carrinho">
+                            <tr>
+                                <td>Endereço:</td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td> </td>
+                                <td><?php echo " $dados_endereco[2] - $dados_endereco[3]"; ?></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><?php echo " $dados_endereco[4]"; ?></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><?php echo " $dados_endereco[5] - $dados_endereco[6]"; ?></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><?php echo " $dados_endereco[7]"; ?></td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+            <div id="dados_valor" class="dados_endereco">
+                    <h3><i class="fas fa-dollar-sign"></i> Valor</h3>
+                    <div id="div_valores">
+                        <p>valor</p> <?php echo number_format($valor_prod, 2, ',', '.')."$";?>
+                        <?php $cartao_prod = $valor_prod/12; ?>
+                        <p>no cartao em ate <?php echo number_format($cartao_prod, 2, ',', '.')."$"; ?></p>
+                        <p>valor a vista no boleto</p> <?php echo number_format($valor_boleto, 2, ',', '.')."$";?>
+                    </div>
+            </div>
             <div id="acao_produto">
                 <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Continuar Comprando</button></a>
                 <a href="carrinho_compra.php"><button>Finalizar Compra <i class="fas fa-shopping-cart"></i></button></a>
