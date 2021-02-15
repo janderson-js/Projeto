@@ -1008,11 +1008,16 @@ input:-webkit-autofill{
 }
 #aprenseta{
     float: left;
-    width: 80%;
+    width: 79.5%;
+    box-sizing: border-box;
 
 }
+#aprenseta ul{
+    padding: 60px;
+    list-style-type: none;
+}
 #apresenta_valor{
-    width: 19%;
+    width: 20%;
     height: 200px;
     float:right;
     border: solid 1px;

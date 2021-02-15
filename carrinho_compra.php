@@ -124,13 +124,16 @@
                 <h3><i class="fas fa-dollar-sign"></i> Valor</h3>
                 <div id="div_valores">
                     <div id="aprenseta">
-                        <p>valor: <span><?php echo number_format($valor_prod, 2, ',', '.')."$";?></span></p>
-                        <?php $cartao_prod = $valor_prod/12; ?>
-                        <p><span>12x</span> no cartao em ate <span><?php echo number_format($cartao_prod, 2, ',', '.')."$"; ?></span></p>
-                        <p>valor a vista no boleto <span><?php echo number_format($valor_boleto, 2, ',', '.')."$";?></span></p>
+                        <ul>
+                            <?php $cartao_prod = $valor_prod/12; ?>
+                            <li><p>valor: <span><?php echo number_format($valor_prod, 2, ',', '.')."$";?></span></p></li>
+                            <li> <p><span>12x</span> no cartao em ate <span><?php echo number_format($cartao_prod, 2, ',', '.')."$"; ?></span></p></li>
+                            <li><p>valor a vista no boleto <span><?php echo number_format($valor_boleto, 2, ',', '.')."$";?></span></p></li>
+                        </ul>
                     </div>
                     <div id="apresenta_valor">
-                    as
+                        <p>Total: <?php echo number_format($valor_prod, 2, ',', '.')."$";?></p>
+                        <p>A vista :<?php echo number_format($valor_boleto, 2, ',', '.')."$";?></p>           
                     </div>
                 </div>
             </div>
