@@ -19,14 +19,10 @@
     if($linhas){
 
         while($dados_produto = mysqli_fetch_row($resultado_consulta_produto)){
-
-            $valor_prod = $valor_prod + $dados_produto[5];
-            $valor_boleto = $valor_boleto + $dados_produto[5];
-
             ?>
             <div id="produto">
                 <div id="img_produto">
-                    <img src="<?php echo "$dados_produto[7]";?>" alt="Produto">
+                    <a href="exibe.php?cod=<?php echo "$dados_produto[0]";?>"><img src="<?php echo "$dados_produto[7]";?>" alt="Produto"></a>
                 </div>
                 <div id="informacao_produto">
                     <h1><?php echo "$dados_produto[3] $dados_produto[4]";?></h1>
@@ -47,7 +43,10 @@
                     <a href="processa_remove.php?cod=<?php echo "$dados_produto[0]";?>"><button>Remover <i class="fas fa-trash-alt"></i></button></a>
                 </div>
             </div>
-<?php  }?> 
+<?php  
+            $valor_prod = $valor_prod + $preco;
+            $valor_boleto = $valor_boleto + $preco2;
+}?> 
             <div id="dados_endereco" class="dados_endereco">
             <?php
                         $sql_meus_dados_user = "SELECT * FROM usuarios
@@ -92,38 +91,48 @@
                                 <td><?php echo "$dados_login[0]"; ?></td>
                             </tr>
                         </table>
-                        <table class="dados_carrinho">
-                            <tr>
-                                <td>Endereço:</td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td> </td>
-                                <td><?php echo " $dados_endereco[2] - $dados_endereco[3]"; ?></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><?php echo " $dados_endereco[4]"; ?></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><?php echo " $dados_endereco[5] - $dados_endereco[6]"; ?></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><?php echo " $dados_endereco[7]"; ?></td>
-                            </tr>
-                        </table>
+                        <?php
+                            if($dados_user[3] != "administrador"){?>
+
+                                <table class="dados_carrinho">
+                                    <tr>
+                                        <td>Endereço:</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr>
+                                        <td> </td>
+                                        <td><?php echo " $dados_endereco[2] - $dados_endereco[3]"; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><?php echo " $dados_endereco[4]"; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><?php echo " $dados_endereco[5] - $dados_endereco[6]"; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><?php echo " $dados_endereco[7]"; ?></td>
+                                    </tr>
+                                </table>
+                        <?php    }
+                        ?>
                     </div>
             </div>
             <div id="dados_valor" class="dados_endereco">
-                    <h3><i class="fas fa-dollar-sign"></i> Valor</h3>
-                    <div id="div_valores">
-                        <p>valor</p> <?php echo number_format($valor_prod, 2, ',', '.')."$";?>
+                <h3><i class="fas fa-dollar-sign"></i> Valor</h3>
+                <div id="div_valores">
+                    <div id="aprenseta">
+                        <p>valor: <span><?php echo number_format($valor_prod, 2, ',', '.')."$";?></span></p>
                         <?php $cartao_prod = $valor_prod/12; ?>
-                        <p>no cartao em ate <?php echo number_format($cartao_prod, 2, ',', '.')."$"; ?></p>
-                        <p>valor a vista no boleto</p> <?php echo number_format($valor_boleto, 2, ',', '.')."$";?>
+                        <p><span>12x</span> no cartao em ate <span><?php echo number_format($cartao_prod, 2, ',', '.')."$"; ?></span></p>
+                        <p>valor a vista no boleto <span><?php echo number_format($valor_boleto, 2, ',', '.')."$";?></span></p>
                     </div>
+                    <div id="apresenta_valor">
+                    as
+                    </div>
+                </div>
             </div>
             <div id="acao_produto">
                 <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Continuar Comprando</button></a>
