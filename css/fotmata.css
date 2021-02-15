@@ -309,19 +309,20 @@ input:-webkit-autofill{
     border-radius: 5px;
     border: solid 1px;
     border-color: rgb(189, 186, 186);
-    background: white;
     height: 30px;
     width: 80px;
     float: left;
     position: relative;
     margin-top: 2%;
     margin-left: 0%;
+    background: black;
+    color: white;
 
 }
 #btn_cadastrar:hover{
     background: rgb(255, 252, 79);
     border-color: black;
-    color: rgb(0, 0, 0);
+    color:black;
 }
 #btn_cadastrar span{
     font-weight: bolder;
@@ -379,16 +380,22 @@ input:-webkit-autofill{
     border: solid 1px black;
 }
 #botao_comprar button{
-    background: green;
+    background: rgb(2, 10, 2);
+    font-weight: bold;
 }
 #botao_comprar button:hover{
-    background: rgb(3, 105, 3);
+    background: rgb(255, 252, 79);
+    color: black;
+    font-weight: bold;
 }
 .botao_detalhes button{
-    background: rgb(180, 20, 9);
+    background: rgb(8, 8, 8);
+    font-weight: bold;
 }
 .botao_detalhes button:hover{
-    background: rgb(141, 15, 5);
+    background: rgb(255, 252, 79);
+    color: black;
+    font-weight: bold;
 }
 /* Formta  */
 #conteiner #conteudo_especifico:nth-child(1),#conteiner #conteudo_especifico:nth-child(2),#conteiner #conteudo_especifico:nth-child(3)
@@ -513,9 +520,13 @@ input:-webkit-autofill{
     padding: 5px;
     font-weight: bold;
 }
-
+#funcionalidade2 #cadastra_btn_volta{
+    color: white;
+    background: black;
+}
 #funcionalidade2 #cadastra_btn_volta:hover{
     background: rgb(255, 252, 79);
+    color: black;
 }
 /* Formata Cadastra */
 #tabela td:nth-child(1) {
@@ -588,6 +599,14 @@ input:-webkit-autofill{
 }
 #cadastro_user table button{
     margin-top: 30px;
+    background: white;
+    color: black;
+    border: solid 1px;
+    border-radius: 10px;
+}
+#cadastro_user table button:hover{
+    background: rgb(255, 252, 79);
+    color: black;
 }
 /* Login user*/
 #login_user{
@@ -613,9 +632,12 @@ input:-webkit-autofill{
     width: 60px;
     height: 30px;
     border: solid 1px rgb(54, 53, 53);
+    background: black;
+    color: white;
 }
 #for_login button:hover{
     background: rgb(255, 252, 79);
+    color: black;
 }
 .lbl{
     background: rgb(230, 230, 230);
@@ -651,6 +673,7 @@ input:-webkit-autofill{
 }
 #funcionalidade2 #exibe_btn_volta:hover{
     background: rgb(255, 252, 79);
+    color: black;
 }
 #funcionalidade2 #exibe_btn_volta{
     border-radius: 5px;
@@ -660,7 +683,8 @@ input:-webkit-autofill{
     float: left;
     margin-left: -60%;
     margin-top: -3%;
-    background: white;
+    background: black;
+    color: white;
 }
 #texto ul li{
     list-style-type: none;
@@ -763,18 +787,20 @@ input:-webkit-autofill{
     font-weight: bold;
 }
 #div_botao_descricao a:nth-child(1) button{
-    background: green;
+    background: black;
     color: white;
 }
 #div_botao_descricao a:nth-child(1) button:hover{
-    background: rgb(3, 105, 3);
+    background: #fffc4f;
+    color: black;
 }
 #div_botao_descricao a:nth-child(2) button{
-    background: rgb(180, 20, 9);
+    background: black;
     color: white;
 }
 #div_botao_descricao a:nth-child(2) button:hover{
-    background: rgb(141, 15, 5);
+    background: #fffc4f;
+    color: black;
 }
 #texto_descricao{
     width: 93%;
