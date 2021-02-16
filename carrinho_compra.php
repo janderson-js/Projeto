@@ -139,7 +139,7 @@
             </div>
             <div id="acao_produto">
                 <a href="index.php"><button><i class="fas fa-long-arrow-alt-left"></i> Continuar Comprando</button></a>
-                <a href="carrinho_compra.php"><button>Finalizar Compra <i class="fas fa-shopping-cart"></i></button></a>
+                <a href="processa_venda.php"><button>Finalizar Compra <i class="fas fa-shopping-cart"></i></button></a>
             </div>
 <?php   }else{
     
