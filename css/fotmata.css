@@ -894,7 +894,7 @@ input:-webkit-autofill{
     text-decoration: none;
     float: left;
     margin-top: 5px;
-    margin-left: 50px;
+    margin-left: 10px;
     padding: 0px;
 }
 #div_texto{
@@ -1083,4 +1083,12 @@ input:-webkit-autofill{
     background:transparent;
     border-top: solid 1px;
     border-color:#d4d4d4;
+}
+#conteudo_rodape{
+    text-align: center;
+    box-sizing: border-box;
+}
+#conteudo_rodape ul{
+    padding: 40px;
+    list-style-type: none;
 }

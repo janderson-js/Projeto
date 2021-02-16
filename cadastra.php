@@ -84,7 +84,7 @@
             </div>
         </div>
         <div id="rodape">
-            sadasd
+            <?php include "rodape.php";?>
         </div>
     </body>
 </html>
