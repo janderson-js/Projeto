@@ -8,12 +8,12 @@
         
         <div id="funcionalidade">
         <?php       
-                        $slq_consulta = "SELECT cod_prod, marca, modelo, preco, descricao, foto, status_prod from produtos
+                        $slq_consulta_pesquisa = "SELECT cod_prod, marca, modelo, preco, descricao, foto, status_prod FROM produtos
                                                 WHERE marca LIKE '%$pesquisa%'
                                                 AND status_prod = 'N'
-                                                '";
+                                                ";
         
-                        $reult = mysqli_query($conectar,$slq_consulta);
+                        $reult = mysqli_query($conectar,$slq_consulta_pesquisa);
         
                         while($dados = mysqli_fetch_row($reult)){
         ?>     

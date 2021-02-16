@@ -84,8 +84,6 @@
             </div>
             
             <?php include "mostra.php";?>
-
-            <a href="cadastra.php"><button id="btn_cadastrar"><span>Cadastrar</span></button> </a>
         </div>
         <div id="rodape">
             <?php include "rodape.php";?>

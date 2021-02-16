@@ -58,8 +58,8 @@
                  alert ('ocorreu um erro no servidor. Tente de novo') 
              </script>";
 
-        // echo "<script> 
-        //          location.href = ('cadastro_user.php') 
-        //      </script>";	
+         echo "<script> 
+                  location.href = ('cadastro_user.php') 
+             </script>";	
     }	  
 ?>

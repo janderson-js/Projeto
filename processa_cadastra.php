@@ -30,8 +30,8 @@
 				alert ('ocorreu um erro no servidor ao tentar cadastrar') 
 			  </script>";
 		
-		// echo "<script> 
-		// 		location.href = ('cadastra.php') 
-		// 	  </script>";
+        echo "<script> 
+              location.href = ('cadastra.php') 
+            </script>";
     }
 ?>

@@ -51,7 +51,6 @@
         <div id="conteudo">
             <div id="funcionalidade2">
                 <div id="cadastro_user" class="cadastro_tabela">
-                    <a href="index.php"><button id="cadastra_btn_volta"><span>Voltar</span></button></a>
                     <h1>Cadastro de Usuarios</h1>
                     <form method="post" action="processa_cadastra_user.php" enctype="multipart/form-data">
                         <table id="tabela_cadastro_user" class="tabela">

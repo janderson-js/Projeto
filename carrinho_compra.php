@@ -132,7 +132,7 @@
                         </ul>
                     </div>
                     <div id="apresenta_valor">
-                        <p>Total: <?php echo number_format($valor_prod, 2, ',', '.')."$";?></p>
+                        <p>SubTotal: <?php echo number_format($valor_prod, 2, ',', '.')."$";?></p>
                         <p>A vista :<?php echo number_format($valor_boleto, 2, ',', '.')."$";?></p>           
                     </div>
                 </div>

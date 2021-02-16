@@ -64,7 +64,6 @@
                     <div id="imagem">
                         <img src="<?php echo "$dados_exibe[7]"; ?>" alt="Produto">
                     </div>
-                    <a href="index.php"><button id="exibe_btn_volta"><span>Voltar</span></button></a>
                     <div id="informes">
                         <div id="texto">
                             <ul>

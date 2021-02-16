@@ -304,36 +304,13 @@ input:-webkit-autofill{
     transition: 1s;
     text-decoration: underline;
 }
-/* Formata lateral Direita*/
-#btn_cadastrar{
-    border-radius: 5px;
-    border: solid 1px;
-    border-color: rgb(189, 186, 186);
-    height: 30px;
-    width: 80px;
-    float: left;
-    position: relative;
-    margin-top: 2%;
-    margin-left: 0%;
-    background: black;
-    color: white;
-
-}
-#btn_cadastrar:hover{
-    background: rgb(255, 252, 79);
-    border-color: black;
-    color:black;
-}
-#btn_cadastrar span{
-    font-weight: bolder;
-}
 /* Formata Div Conteiner*/
 #conteiner{
     float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 92.5%;
+    max-width: 100%;
     
 }
 /* Formata conteudo específico*/
@@ -661,29 +638,6 @@ input:-webkit-autofill{
     background: white;
 
     border: solid 1px rgb(211, 210, 210);
-}
-#exibe_btn_volta{
-    margin-left: -60%;
-    margin-top: 2%;
-    float: left;
-}
-#funcionalidade2 #exibe_btn_volta span{
-    font-weight: bolder;
-}
-#funcionalidade2 #exibe_btn_volta:hover{
-    background: rgb(255, 252, 79);
-    color: black;
-}
-#funcionalidade2 #exibe_btn_volta{
-    border-radius: 5px;
-    border:solid 1px rgb(151, 148, 148);
-    width: 50px;
-    height: 25px;
-    float: left;
-    margin-left: -60%;
-    margin-top: -3%;
-    background: black;
-    color: white;
 }
 #texto ul li{
     list-style-type: none;
@@ -1031,26 +985,26 @@ input:-webkit-autofill{
 }
 #apresenta_valor{
     width: 20%;
-    height: 200px;
     float:right;
     box-sizing: border-box;
 
 }
 #apresenta_valor p{
     font-weight: bold;
+    font-size: 15px;
 }
 #apresenta_valor p:nth-child(1){
     background: rgb(245, 169, 169);
     border: solid 1px red;
     color: black;
-    padding: 40px;
+    padding: 35px;
     border-bottom: none;
 }
 #apresenta_valor p:nth-child(2){
     background: rgb(170, 247, 170);
     border: solid 1px green;
     border-top: none;
-    padding: 40px;
+    padding: 35px;
 }
 #div_valores {
     overflow: hidden;
