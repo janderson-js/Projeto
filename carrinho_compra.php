@@ -4,10 +4,8 @@
 
     $cod = $_SESSION["usuarios_cod_user"];
 
-    $slq_consulta_produto = "SELECT * from produtos
-                WHERE usuarios_cod_user = '$cod'
-                AND  status_prod = 'F'
-            ";
+    $slq_consulta_produto = "SELECT * FROM produtos WHERE usuarios_cod_user = '$cod'
+                                                    AND   status_prod = 'F'";
     $resultado_consulta_produto = mysqli_query($conecta,$slq_consulta_produto);
 
     

@@ -82,7 +82,6 @@
 
                         $dados_endereco = mysqli_fetch_row($resultado_sql_meus_dados_endereco);
                     ?>
-                    <a href="index.php"><button id="cadastra_btn_volta"><span>Voltar</span></button></a>
                     <h1>Cadastro de Usuarios</h1>
                     <?php 
                         if($dados_user[3] != "administrador"){?>

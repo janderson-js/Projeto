@@ -5,6 +5,7 @@
         $cod = $_SESSION["usuarios_cod_user"];
         $sql_qtd_no_carrinho = "SELECT  COUNT(usuarios_cod_user) FROM produtos
                                     WHERE  usuarios_cod_user = '$cod'
+                                    AND    status_prod = 'F'
                                     GROUP BY usuarios_cod_user
                                     HAVING (COUNT(*) > 0)";
     
