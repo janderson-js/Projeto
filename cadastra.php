@@ -9,7 +9,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/fotmata.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-        <script defer src="js/teste.js"></script>
+        <script defer src="js/div-hidden-show.js"></script>
     </head>
     <body>
         <div id="top">
