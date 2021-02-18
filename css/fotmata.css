@@ -91,6 +91,7 @@ body{
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    cursor:context-menu;
 }
 ::-webkit-input-placeholder{
     color: rgb(199, 199, 199);
@@ -1052,9 +1053,8 @@ input:-webkit-autofill{
     border: solid 1px;
     border-color:#d4d4d4;
     background: white;
-    height: 500px;
-    min-height: 500px;
     width: 95%;
+    height: 400px;
     margin-left: 2.5%;
     margin-right: 2.5%;
     float: left;
@@ -1066,26 +1066,52 @@ input:-webkit-autofill{
     justify-content: space-around;
     align-items: center;
 }
-#menu_adm{
-    width: 40%;
-    height: 80%;
+#estoque{
+    width: 100%;
+    height: 100%;
     border: solid 1px;
-    text-align: center;
     box-sizing: border-box;
 }
-#menu_adm ul li,a{
-    list-style-type: none;
-    text-decoration: none;
+#estoque h1{
+    padding: 25px;
 }
-#menu_adm h1{
-    margin-top: 8%;
+#estoque button{
+    float: right;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top:10px;
+    background: black;
+    color: white;
+    border: solid 1px;
+    font-weight: bolder;
 }
-#menu_adm ul li:nth-child(1){
-    margin-top: 10%;
+#estoque button:hover{
+    background:#fffc4f;
+    color: black;
 }
-#menu_adm ul li{
-    padding: 10px;
-    font-size: 20px;
+#infos{
+    width: 80%;
+    height:65%;
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#qtd_estoque{
+    width: 20%;
+    height: 50%;
+    border: solid 1px;
+    text-align: center;
+}
+#qtd_estoque i{
+    font-size: 60px;
+    margin-top: 15%;
 }
 /**/
 /**/

@@ -42,21 +42,17 @@
         </div>
         <div id="conteudo">
             <div id="div_administracao">
-                <div id="menu_adm">
-                    <h1>Administração</h1>
-                    <ul>
-                        <li><a href="#">Vendas</a></li>
-                        <li><a href="#">Estoque</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="div_administracao">
-                <div id="menu_adm">
-                    <h1>Administração</h1>
-                    <ul>
-                        <li><a href="#">Vendas</a></li>
-                        <li><a href="#">Estoque</a></li>
-                    </ul>
+                <div id="estoque">
+                    <h1> Estoque</h1>
+                    <div id="infos">
+                        <div id="qtd_estoque">
+                        <p><i class="fas fa-boxes"></i><br> Ver estoque</p>
+                        </div>
+                        <div id="valor_total_estoque">
+
+                        </div>
+                    </div>
+                    <a href="#"><button>Gerenciar Estoque <i class="fas fa-long-arrow-alt-right"></i></button></a>
                 </div>
             </div>
         </div>
