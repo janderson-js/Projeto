@@ -13,7 +13,7 @@
 
         $dados = mysqli_fetch_row($result_consulta);
 
-        echo "<p>Bem-Vindo - $dados[1] $dados[2]</p>";
+        echo "<p>Bem-Vindo - $dados[1] $dados[2]   -   <a href='logout.php'> Sair  </a></p>";
     }else{
         echo '<a href="login.php"><strong>Login</strong></a><span> | </span><a href="cadastro_user.php"><strong>Cadastrar-se</strong></a>';
   }

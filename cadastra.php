@@ -21,21 +21,11 @@
             </a>
             <div id="pesquisar">
                 <div id="faz_pesquisa">
-                    <form action="index.php">
-                        <label for="" id="lbl_form_pesquisar">
-                            <input type="text" autocomplete="off" name="pesquisa" placeholder="Pesquisar..." >
-                            <button type="submit"><i class="fas fa-search"></i></i></button>
-                        </label>
-                    </form>
+                    <p>Administração</p>
                 </div>
             </div>
             <div id="conteiner_interacao">
                 <div id="carrinho">
-                    <div id="carro"><i class="fas fa-shopping-cart"></i></div>
-                        <div id="texto_carro">
-                            <a href="valida_login.php"><p><span><strong>ver carrinho</strong></span></p></a>
-                            <p><span><?php include "status_itens_carrinho.php";?></span></p>
-                        </div>
                 </div>
                 <div id="login">
                     <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>

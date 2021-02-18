@@ -49,7 +49,7 @@
                             <p><a href="#"><i class="fas fa-boxes"></i><br><span>Ver estoque</span></a></p>
                         </div>
                         <div id="cadastrar_estoque">
-                            <p><a href="#"><i class="fas fa-clipboard-list"></i><br><span>Cadastrar Produto</span></a></p>
+                            <p><a href="cadastra.php"><i class="fas fa-clipboard-list"></i><br><span>Cadastrar Produto</span></a></p>
                         </div>
                     </div>
                     <a href="#"><button>Gerenciar Estoque <i class="fas fa-long-arrow-alt-right"></i></button></a>
