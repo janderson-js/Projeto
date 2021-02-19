@@ -21,7 +21,7 @@
             </a>
             <div id="pesquisar">
                 <div id="faz_pesquisa">
-                    <p>Administração</p>
+                    <p>Estoque</p>
                 </div>
             </div>
             <div id="conteiner_interacao">
@@ -36,40 +36,30 @@
                     </div>
                 </div>
                 <div id="boasVindas">
-                        <?php include "boas_vindas.php";?>
+                    <?php include "boas_vindas.php";?>
                 </div>
             </div>
         </div>
         <div id="conteudo">
-            <div id="div_administracao">
-                <div id="estoque">
-                    <h1> Estoque</h1>
-                    <div id="infos">
-                        <div id="qtd_estoque">
-                            <p><a href="estoque.php"><i class="fas fa-boxes"></i><br><span>Ver estoque</span></a></p>
+            <div id="div_estoque">
+                <h1>Estoque</h1>
+                <a href="#"><button> Cadastrar</button></a>
+                <div id="div_lista_prod">
+                    <div id="div_prod">
+                        <div id="img_estoque">
+                            <img src="" alt="Produto">                           
                         </div>
-                        <div id="cadastrar_estoque">
-                            <p><a href="cadastra.php"><i class="fas fa-clipboard-list"></i><br><span>Cadastrar Produto</span></a></p>
+                        <div id="descricao_estoque">
+                            <h1>Nome Produto</h1>
                         </div>
-                    </div>
-                    <a href="estoque.php"><button>Gerenciar Estoque <i class="fas fa-long-arrow-alt-right"></i></button></a>
-                </div>
-            </div>
-            <div id="div_administracao">
-                <div id="estoque">
-                    <h1>Vendas</h1>
-                    <div id="infos">
-                        <div id="qtd_estoque">
-                            <p><a href="#"><i class="fas fa-dollar-sign"></i><br><span>Ver Vendas</span></a></p>
+                        <div id="preco_estoque">
+                                30000
                         </div>
-                        <div id="cadastrar_estoque">
-                            <p><a href="#"><i class="fas fa-wallet"></i><br><span>Faturamento</span></a></p>
+                        <div id="alterar_estoque">
+                            Alterar
                         </div>
                     </div>
-                    <a href="#"><button>Gerenciar Vendas <i class="fas fa-long-arrow-alt-right"></i></button></a>
-                </div>
             </div>
-        </div>
         <div id="rodape">
             <?php include "rodape.php";?>
         </div>

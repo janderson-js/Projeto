@@ -1153,7 +1153,73 @@ input:-webkit-autofill{
 #cadastrar_estoque:hover span{
     text-decoration: underline;
 }
-/**/
+/* #div_estoque*/
+#div_estoque{
+    border: solid 1px;
+    border-color:#d4d4d4;
+    background: white;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+}
+#div_estoque h1{
+    padding: 25px;
+    font-weight: bold;
+    font-size: 60px;
+    display: inline-flex;
+}
+#div_estoque a{
+    float: right;
+    border:solid 1px;
+    display: inline-flex;
+    margin:45px 50px;
+}
+#div_estoque  button{
+    width: 100px;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 10px;
+    color: white;
+    background: black;
+    font-weight: bold;
+}
+#div_estoque a button:hover{
+    background:#fffc4f;
+    color: black;
+}
+#div_lista_prod{
+    width: 95%;
+    height: 600px;
+    margin: auto auto auto auto;
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#div_prod{
+    width: 80%;
+    height: 20%;
+    border: solid 1px;
+}
+#img_estoque{
+    border: solid 1px;
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+#descricao_estoque{
+    width: 50%;
+    height: 100%;
+    border: solid 1px;
+    float: left;
+}
 /**/
 /**/
 /**/
