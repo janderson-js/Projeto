@@ -1,5 +1,5 @@
 <?php
-   
+   session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,7 +13,7 @@
     </head>
     <body>
         <div id="top">
-            <a href="administracao.php">
+            <a href="index.php">
                 <div id="logo">
                     <h1 class="texto_logo">PHP</h1>
                     <p class="texto_logo_p">Vitrine</p>

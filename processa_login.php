@@ -31,6 +31,8 @@
 		$status_user = mysqli_fetch_row($result_sql_status_user);
 
 		if($status_user[0] == "administrador"){
+			
+			$_SESSION["staus_user"] = $status_user[0];
 
 			echo "<script> 
 				  alert ('Bem-Vindo Administrador!!') 
