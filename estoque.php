@@ -47,18 +47,19 @@
                 <div id="div_lista_prod">
                     <div id="div_prod">
                         <div id="img_estoque">
-                            <img src="" alt="Produto">                           
+                            <img src="img/Acer.jpg" alt="Produto">                           
                         </div>
                         <div id="descricao_estoque">
                             <h1>Nome Produto</h1>
                         </div>
                         <div id="preco_estoque">
-                                30000
+                            <p><span>Preço:</span> 3000</p>
                         </div>
                         <div id="alterar_estoque">
-                            Alterar
+                            <a href="#"><button>Alterar</button></a>
                         </div>
                     </div>
+                </div>
             </div>
         <div id="rodape">
             <?php include "rodape.php";?>

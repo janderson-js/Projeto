@@ -1175,9 +1175,9 @@ input:-webkit-autofill{
 }
 #div_estoque a{
     float: right;
-    border:solid 1px;
     display: inline-flex;
     margin:45px 50px;
+    text-decoration: none;
 }
 #div_estoque  button{
     width: 100px;
@@ -1196,7 +1196,6 @@ input:-webkit-autofill{
     width: 95%;
     height: 600px;
     margin: auto auto auto auto;
-    border: solid 1px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1206,19 +1205,57 @@ input:-webkit-autofill{
 #div_prod{
     width: 80%;
     height: 20%;
-    border: solid 1px;
+    border: solid 1px #d4d4d4;
 }
 #img_estoque{
-    border: solid 1px;
     width: 15%;
     height: 100%;
     float: left;
+    border-right: solid 1px #d4d4d4;
+}
+#img_estoque img{
+    width: 100%;
+    height: 100%;
 }
 #descricao_estoque{
     width: 50%;
     height: 100%;
-    border: solid 1px;
     float: left;
+    border-right: solid 1px #d4d4d4;
+    box-sizing: border-box;
+    text-align: center;
+}
+#descricao_estoque h1{
+    font-size: 20px;
+    padding: 0px;
+    margin: 50px;
+}
+#preco_estoque{
+    width: 17.2%;
+    height: 100%;
+    float: left;
+    border-right: solid 1px #d4d4d4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#preco_estoque p{
+    font-weight: bold;
+}
+#alterar_estoque{
+    width: 17.2%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#alterar_estoque a:nth-child(1){
+    font-weight: bold;
 }
 /**/
 /**/
