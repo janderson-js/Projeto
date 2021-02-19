@@ -41,7 +41,7 @@
         <div id="conteudo">
             <div id="funcionalidade2">
                 <div id="cadastro">
-                    <a href="administracao.php"><button>Voltar</button></a>
+                    <a href="estoque.php"><button>Voltar</button></a>
                     <h1 class="titulo">Cadastro de Produtos</h1>
                     <form method="post" action="processa_cadastra.php" enctype="multipart/form-data">
                         <table id="tabela">

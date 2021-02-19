@@ -42,23 +42,13 @@
         </div>
         <div id="conteudo">
             <div id="div_estoque">
-                <h1>Estoque</h1>
-                <a href="#"><button> Cadastrar</button></a>
+                <h1>Produtos em Estoque</h1>
+                <a href="cadastra.php"><button> Cadastrar</button></a>
                 <div id="div_lista_prod">
-                    <div id="div_prod">
-                        <div id="img_estoque">
-                            <img src="img/Acer.jpg" alt="Produto">                           
-                        </div>
-                        <div id="descricao_estoque">
-                            <h1>Nome Produto</h1>
-                        </div>
-                        <div id="preco_estoque">
-                            <p><span>Preço:</span> 3000</p>
-                        </div>
-                        <div id="alterar_estoque">
-                            <a href="#"><button>Alterar</button></a>
-                        </div>
-                    </div>
+                    <?php include "mostrar_estoque.php" ?>
+                </div>
+                <div id="valor_estoque">
+                        <p>Valor em estoque: <span><?php echo number_format($valor_estoque, 2, ',', '.')."$";?></span></p>
                 </div>
             </div>
         <div id="rodape">
