@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div id="login">
-                    <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>
+                    <button  id="btn_teste" type="button"><i class="far fa-user-circle"><br><span>Perfil</span></i></button>    
                     <div id="dados1" class="dados">
                         <?php include "menu.php";?>
                     </div>
@@ -43,7 +43,7 @@
         <div id="conteudo">
             <div id="div_estoque">
                 <h1>Produtos em Estoque</h1>
-                <a href="cadastra.php"><button> Cadastrar</button></a>
+                <a href="cadastra.php"><button> Cadastrar Produto</button></a>
                 <div id="div_lista_prod">
                     <?php include "mostrar_estoque.php" ?>
                 </div>

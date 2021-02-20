@@ -35,7 +35,7 @@
                         </div>
                 </div>
                 <div id="login">
-                    <button  id="btn_teste" type="button"><i class="far fa-user-circle"></i></button>
+                    <button  id="btn_teste" type="button"><i class="far fa-user-circle"><br><span>Perfil</span></i></button>
                     <div id="dados1" class="dados">
                         <?php include "menu.php";?>
                     </div>
