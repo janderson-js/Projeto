@@ -14,13 +14,13 @@
                             <a href="exibe.php?cod=<?php echo "$dados_estoque[0]";?>"><img src="<?php echo "$dados_estoque[7]";?>" alt="Produto"></a>                           
                         </div>
                         <div id="descricao_estoque">
-                            <h1><?php echo "$dados_estoque[3] $dados_estoque[4]";?></h1>
+                            <a href="exibe.php?cod=<?php echo "$dados_estoque[0]";?>"><h1><?php echo "$dados_estoque[3] $dados_estoque[4]";?></h1></a>
                         </div>
                         <div id="preco_estoque">
                             <p><span>Preço:</span> <?php echo number_format($dados_estoque[5], 2, ',', '.')."$";?></p>
                         </div>
                         <div id="alterar_estoque">
-                            <a href="altera_prod.php?cod=<?php echo "$dados_estoque[0]";?>"><button>Alterar</button></a>
+                            <a href="altera_prod.php?cod_prod=<?php echo "$dados_estoque[0]";?>"><button>Alterar</button></a>
                         </div>
                     </div>
 <?php

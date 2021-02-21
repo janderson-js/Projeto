@@ -5,7 +5,9 @@
 body{
     background:#ebebeb;
 }
-
+button:hover{
+    cursor: pointer;
+}
 #funcionalidade{
     
     width: 70%;
@@ -206,7 +208,7 @@ body{
     position: relative;
     float: right;
 
-    margin-top: 19px;
+    margin-top: 20px;
     width: 200px;
     z-index: 1;
     background:white;
@@ -1219,7 +1221,27 @@ body{
     margin-bottom: 2%;
 }
 #img_estoque{
-    width: 15%;
+    width: 20%;
+    height: 100%;
+    float: left;
+    border-right: solid 1px #d4d4d4;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+#img_estoque a{
+  margin: 0px;
+}
+#img_estoque img{
+    width: 150px;
+    height: 120px;
+}
+#descricao_estoque{
+    width: 45%;
     height: 100%;
     float: left;
     border-right: solid 1px #d4d4d4;
@@ -1230,25 +1252,18 @@ body{
     justify-content: center;
     align-items: center;
 }
-#img_estoque a{
-  margin: 0px;
+#descricao_estoque a{
+    color: black;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-#img_estoque img{
-    width: 120px;
-    height: 100px;
-}
-#descricao_estoque{
-    width: 50%;
-    height: 100%;
-    float: left;
-    border-right: solid 1px #d4d4d4;
-    box-sizing: border-box;
-    text-align: center;
+#descricao_estoque a:hover{
+    color: red;
+    transition: 1s;
 }
 #descricao_estoque h1{
     font-size: 20px;
-    padding: 0px;
-    margin: 50px;
 }
 #preco_estoque{
     width: 17.2%;
