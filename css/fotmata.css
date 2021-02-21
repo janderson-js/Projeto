@@ -185,10 +185,10 @@ button:hover{
     border: none;
     cursor: pointer;
     width: 100px;
-    height: 80%;
+    height: 100%;
 }
 #login button i{
-    margin-top: 30px;
+    margin-top: 34px;
 }
 #login button span{
     font-size: 18px;
@@ -207,8 +207,6 @@ button:hover{
 #dados1{
     position: relative;
     float: right;
-
-    margin-top: 20px;
     width: 200px;
     z-index: 1;
     background:white;
