@@ -1179,15 +1179,20 @@ button:hover{
     margin-top: 2%;
     margin-bottom: 2%;
     box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 #div_estoque h1{
     padding: 25px;
     font-weight: bold;
     font-size: 60px;
     display: inline-flex;
+    text-align: right;
 }
 #div_estoque a{
-    float: right;
     display: inline-flex;
     margin:45px 50px;
     text-decoration: none;

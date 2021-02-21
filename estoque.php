@@ -42,8 +42,9 @@
         </div>
         <div id="conteudo">
             <div id="div_estoque">
+                <a href="administracao.php"><button><i class='fas fa-long-arrow-alt-left'></i> Administração </button></a>
                 <h1>Produtos em Estoque</h1>
-                <a href="cadastra.php"><button> Cadastrar Produto</button></a>
+                <a href="cadastra.php"><button> Cadastrar Produto <i class="fas fa-long-arrow-alt-right"></i></button></a>
                 <div id="div_lista_prod">
                     <?php include "mostrar_estoque.php" ?>
                 </div>
