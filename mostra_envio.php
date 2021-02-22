@@ -107,7 +107,7 @@
                         <?php    }
                         ?>
             </div>
-            <a href="enviar.php"><button>enviar</button></a>
+            <a href="enviado.php"><button>enviar <i class="fas fa-truck-moving"></i></button></a>
         </div>
 <?php 
     
