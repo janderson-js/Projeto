@@ -256,6 +256,7 @@ button:hover{
     z-index: 0;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: end;
 }
 #boasVindas p{
     font-size: 15px;
@@ -1296,10 +1297,6 @@ button:hover{
 #alterar_estoque a{
     font-weight: bold;
 }
-
-#alterar_estoque a button{
-    width: 100px;
-}
 /* valor_estoque*/
 #valor_estoque{
     width: 90%;
@@ -1319,5 +1316,74 @@ button:hover{
 #valor_estoque p span{
     color: green;
 }
-/**/
-/**/
+/* #dados_entrega*/
+#dados_entrega{
+    width: 80%;
+    border: solid 1px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    border-top: none;
+}
+/* exibe_vendas*/
+#exibe_venda{
+    width: 100%;
+}
+#dados_produto{
+    width: 100%;
+    height: 180px;
+    border: solid 1px;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 2%;
+}
+#imagen{
+    width: calc(20% - 2px);
+    border-right: solid 1px;
+    height: 100%;
+    object-fit: cover;
+    float: left;
+}
+#imagen img{
+    width: 100%;
+    height: 100%;
+}
+#descricao_prod{
+    width: 60%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#preco_prod{
+    width: calc(20% - 1px);
+    height: 100%;
+    border-left: solid 1px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#dados_user{
+    width: 100%;
+    height: 180px;
+    border: solid 1px;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}

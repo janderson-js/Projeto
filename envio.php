@@ -1,6 +1,3 @@
-<?php
-   session_start();
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -21,13 +18,21 @@
             </a>
             <div id="pesquisar">
                 <div id="faz_pesquisa">
-                    <p>Administração</p>
+                    <form action="index.php">
+                        <label for="" id="lbl_form_pesquisar">
+                            <input type="text" autocomplete="off" name="pesquisa" placeholder="Pesquisar..." >
+                            <button type="submit"><i class="fas fa-search"></i></i></button>
+                        </label>
+                    </form>
                 </div>
             </div>
             <div id="conteiner_interacao">
                 <div id="carrinho">
-                    <div id="texto_carro">
-                    </div>
+                    <div id="carro"><i class="fas fa-shopping-cart"></i></div>
+                        <div id="texto_carro">
+                            <a href="valida_login.php"><p><span><strong>ver carrinho</strong></span></p></a>
+                            <p><span><?php include "status_itens_carrinho.php";?></span></p>
+                        </div>
                 </div>
                 <div id="login">
                     <button  id="btn_teste" type="button"><i class="far fa-user-circle"><br><span>Perfil</span></i></button>
@@ -41,32 +46,15 @@
             </div>
         </div>
         <div id="conteudo">
-            <div id="div_administracao">
-                <div id="estoque">
-                    <h1> Estoque</h1>
-                    <div id="infos">
-                        <div id="qtd_estoque">
-                            <p><a href="estoque.php"><i class="fas fa-boxes"></i><br><span>Ver estoque</span></a></p>
-                        </div>
-                        <div id="cadastrar_estoque">
-                            <p><a href="cadastra.php"><i class="fas fa-clipboard-list"></i><br><span>Cadastrar Produto</span></a></p>
-                        </div>
+            <div id="funcionalidade2">
+                <div id="adicionarAoCarrinho">
+                    <div id="div_titulo">
+                        <h1 class="titulo_carrinho">Preparar envio</h1>
                     </div>
-                    <a href="estoque.php"><button>Gerenciar Estoque <i class="fas fa-long-arrow-alt-right"></i></button></a>
-                </div>
-            </div>
-            <div id="div_administracao">
-                <div id="estoque">
-                    <h1>Vendas</h1>
-                    <div id="infos">
-                        <div id="qtd_estoque">
-                            <p><a href="vendas.php"><i class="fas fa-dollar-sign"></i><br><span>Ver Vendas</span></a></p>
-                        </div>
-                        <div id="cadastrar_estoque">
-                            <p><a href="#"><i class="fas fa-wallet"></i><br><span>Faturamento</span></a></p>
-                        </div>
+                    <h1>Pedido </h1>
+                    <div id="dados_entrega">
+                        <?php include "mostra_envio.php" ?>
                     </div>
-                    <a href="#"><button>Gerenciar Vendas <i class="fas fa-long-arrow-alt-right"></i></button></a>
                 </div>
             </div>
         </div>
