@@ -47,11 +47,34 @@
         </div>
         <div id="conteudo">
             <div id="funcionalidade2">
-                <div id="div_estoque">
-                    <a href="vendas.php"><button><i class='fas fa-long-arrow-alt-left'></i> Voltar a Vendas </button></a>
-                    <h1> Preparar envio</h1>
-                    <a href="faturamento.php"><button> Faturamento <i class="fas fa-long-arrow-alt-right"></i></button></a>
-                    <?php include "mostra_envio.php" ?>    
+                <div id="adicionarAoCarrinho">
+                    <div id="div_titulo">
+                        <h1 class="titulo_carrinho">Faturamento</h1>
+                    </div>
+                    <div id="recibo">
+                        <h1>Relatorio de Faturamento</h1>
+                        <?php
+                            date_default_timezone_set('America/Sao_Paulo');
+                            $data = date('d/m/Y');
+
+                            $slq_consulta_total_venda = "SELECT  preco FROM produtos
+                                                            WHERE  status_prod = 'V'";
+
+                            $result_consulta_total_venda = mysqli_query($conectar, $slq_consulta_total_venda);
+
+                            $valor_total_venda = 0;
+                            $ct = 0;
+
+                            while($total_venda = mysqli_fetch_row($result_consulta_total_venda)){
+                                $ct = $ct + 1;
+
+                                $valor_total_venda = $valor_total_venda + $total_venda[0];
+                            }
+                        ?>
+                        <p>Total de vendas:<?php echo " $ct";?></p>
+                        <p>Valor total : <?php echo number_format($valor_total_venda, 2, ',', '.')."$";?></p>
+                        <p>Até a presente Data : <?php echo "$data";?></p>
+                        <a href="vendas.php"><button><i class="fas fa-long-arrow-alt-left"></i> Voltar a vendas</button></a>
                     </div>
                 </div>
             </div>

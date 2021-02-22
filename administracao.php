@@ -63,7 +63,7 @@
                             <p><a href="vendas.php"><i class="fas fa-dollar-sign"></i><br><span>Ver Vendas</span></a></p>
                         </div>
                         <div id="cadastrar_estoque">
-                            <p><a href="#"><i class="fas fa-wallet"></i><br><span>Faturamento</span></a></p>
+                            <p><a href="faturamento.php"><i class="fas fa-wallet"></i><br><span>Faturamento</span></a></p>
                         </div>
                     </div>
                     <a href="#"><button>Gerenciar Vendas <i class="fas fa-long-arrow-alt-right"></i></button></a>
