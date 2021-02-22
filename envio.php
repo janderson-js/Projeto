@@ -47,13 +47,11 @@
         </div>
         <div id="conteudo">
             <div id="funcionalidade2">
-                <div id="adicionarAoCarrinho">
-                    <div id="div_titulo">
-                        <h1 class="titulo_carrinho">Preparar envio</h1>
-                    </div>
-                    <h1>Pedido </h1>
-                    <div id="dados_entrega">
-                        <?php include "mostra_envio.php" ?>
+                <div id="div_estoque">
+                    <a href="administracao.php"><button><i class='fas fa-long-arrow-alt-left'></i> Administração </button></a>
+                    <h1> Preparar envio</h1>
+                    <a href="faturamento.php"><button> Faturamento <i class="fas fa-long-arrow-alt-right"></i></button></a>
+                    <?php include "mostra_envio.php" ?>    
                     </div>
                 </div>
             </div>

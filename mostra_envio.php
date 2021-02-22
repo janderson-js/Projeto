@@ -107,6 +107,7 @@
                         <?php    }
                         ?>
             </div>
+            <a href="enviar.php"><button>enviar</button></a>
         </div>
 <?php 
     

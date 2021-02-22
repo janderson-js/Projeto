@@ -1333,14 +1333,13 @@ button:hover{
 }
 /* exibe_vendas*/
 #exibe_venda{
-    width: 100%;
+    width: 80%;
 }
 #dados_produto{
     width: 100%;
     height: 180px;
     border: solid 1px;
-    border-right: none;
-    border-left: none;
+    
     margin-bottom: 2%;
 }
 #imagen{
@@ -1376,14 +1375,11 @@ button:hover{
     align-items: center;
 }
 #dados_user{
-    width: 100%;
+    width: 80%;
     height: 180px;
     border: solid 1px;
     margin-bottom: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
 }
